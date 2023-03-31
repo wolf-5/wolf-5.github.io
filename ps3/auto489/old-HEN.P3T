@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+  <icontable />
+  <infotable>
+    <info name="" url="" author="" genre="" version="" comment="" />
+  </infotable>
+  <pointertable />
+  <bgimagetable />
+  <font selection="0" />
+  <color selection="0" />
+  <notification />
+  <setable />
+</theme>

@@ -1,0 +1,13 @@
+CACHE MANIFEST 
+# The Wolf Host 505 ( Sun 12/25/2022 )
+
+cache.html
+common.js
+goldhen_2.3_505.bin
+index.html
+kernelExploit_bpf_double_free.js
+offsets.js
+rop.js
+userland.js
+webkitExploit_haveABadTime.js
+webkitExploit_stackUnitializedRead.js
