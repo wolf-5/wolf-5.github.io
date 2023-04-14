@@ -1,0 +1,16 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ /**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ /**
+ * For the activation notice on the plugins page.
+ */
+.adstxtmanager_description a {
+    margin-right: 7px !important;
+}
