@@ -1,13 +1,13 @@
 @echo off
 echo CACHE MANIFEST > test0.txt
-echo # The Wolf Host 900m ( %date% )>> test0.txt
+echo # The Wolf Host 672 ( %date% )>> test0.txt
 echo. >> test0.txt
 
 set LOC=%~dp0
 
 dir /B /S /A:-D >> test0.txt
 
-findstr /v "media mod .bat .exe .mp4 .git .rar Cache.manifest test0.txt" test0.txt > test.txt
+findstr /v "media .bat .exe .mp4 .git .rar Cache.manifest test0.txt" test0.txt > test.txt
 del test0.txt
 
 @echo off
