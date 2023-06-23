@@ -1,8 +1,9 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Sun 12/25/2022 )
+# The Wolf Host 505 ( Thu 06/22/2023 )
 
 cache.html
 common.js
+goldhenv24b14.bin
 goldhen_2.3_505.bin
 index.html
 kernelExploit_bpf_double_free.js
