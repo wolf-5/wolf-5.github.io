@@ -1,6 +1,6 @@
 @echo off
 echo CACHE MANIFEST > test0.txt
-echo # The Wolf Host 900m ( %date% )>> test0.txt
+echo # The Wolf Host 900n ( %date% )>> test0.txt
 echo. >> test0.txt
 
 set LOC=%~dp0
