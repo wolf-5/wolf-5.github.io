@@ -42,6 +42,26 @@ transform: scale(1.1)
 </style>
 <br><br><br><br>
 <h1 id=msgs style='font-size:25px;text-align:center;'>WELCOME</h1>
+	<script>
+//window.applicationCache.ondownloading = function()
+{
+	alert("Caching started !!")
+};
+
+window.applicationCache.onprogress = function(a)
+{
+	document.getElementById("msgs").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+};
+
+window.applicationCache.oncached = window.applicationCache.onupdateready = function()
+{
+	alert("Page Cached!!")
+    document.location.href = document.location.href;
+};
+
+if(!document.location.href.endswith("/index.html"))
+    document.location.href = "index.html";
+</script>
 <a  style="margin-top: 150px;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="netcat.html#payload=ps5-kstuff.bin"onMouseOver="msgs.innerHTML='Hen v1.1'"><img src="img/hen.png"><span class="TextCaption">HEN</span></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="netcat.html#payload=ftpsrv.elf"onMouseOver="msgs.innerHTML='FTP'"><img src="img/ftp.png"><span class="TextCaption">FTP</span></a>
