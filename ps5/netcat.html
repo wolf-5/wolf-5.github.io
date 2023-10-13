@@ -1,9 +1,18 @@
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>PS5 4.03 JailBreak</title>
-</head>   
+<style>
+html {
+    background-color: #24272b;
+    text-align: center;
+}
+h1 {
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 25px;
+    color: white;
+}
+</style>
 <body>
+<br><br>
+<h1 id="msgs" style='font-size:25px;text-align:center;'>Jailbreaking <font color=#fc0404> ( Please wait ) ....</h1>																					  
 <script>function print(){}</script>
 <script>
 var cachedJS = {};
@@ -24,8 +33,10 @@ function c_code_done(printf_ans, main_ret)
 {
     if(main_ret)
         alert("Jailbreak failed! Reboot your PS5 and try again!\n"+printf_ans+"\nmain() returned "+main_ret);
+		window.msgs.innerHTML="<h1>Failed to Load! - Restart your Console.</h1>";
     else
         alert("You're all set!");
+		window.msgs.innerHTML="<h1>Exploit Loaded!</h1>";
     window.sigsegv_handler = 0;
     runJS('sigsegv.js');
     read_ptr_at(0);
@@ -69,7 +80,6 @@ the_worker.onmessage = function()
 }
 the_worker.postMessage(1);
 </script>
-<br><br>
-<h1 style='font-size:25px;text-align:center;'>Jailbreaking <font color=#fc0404> ( Please wait ) ....</h1>
 </body>
 </html>
+
