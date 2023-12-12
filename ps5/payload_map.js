@@ -32,14 +32,22 @@ const payload_map =
             source:'https://github.com/LightningMods/etaHEN',
             version: '?'
         },
+		{
+            displayTitle: 'Dumpgame',
+            description: 'dump Game',
+            fileName: 'dumpgame.bin',
+            author: '?',
+            source:'?',
+            version: '?'
+        },
         {
             displayTitle: 'LIBHIJACKER GAME-PACTH',
-            description: '(v1.124) Patches supported games .',
-            fileName: 'libhijacker-spawner-1.124.elf;libhijacker-daemon-1.124.elf',
+            description: '(v1.132) Patches supported games .',
+            fileName: 'libhijacker-spawner-1.132.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',
             loader: 'libhijacker',
-            version: '1.124'
+            version: '1.132'
         },
         {
             displayTitle: 'SYS INFO',

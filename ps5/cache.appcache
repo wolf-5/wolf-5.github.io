@@ -1,7 +1,6 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Fri 11/03/2023 )
+# The Wolf Host 505 ( Tue 12/12/2023 )
 
-2cache.appcache
 2main.css
 appcache_handler.js
 custom_host_stuff.js
@@ -14,8 +13,6 @@ rop.js
 rop_slave.js
 service_worker.js
 webkit.js
-New folder\2main.css
-New folder\main.css
 offsets\2-4.03.js
 offsets\2-4.50.js
 offsets\3.00.js
@@ -28,6 +25,7 @@ offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
 payloads\Browser_appCache_remove.elf
+payloads\dumpgame.bin
 payloads\elfldr.elf
 payloads\etaHEN-1.1b.bin
 payloads\etaHENwithcheats-1.1b.bin
@@ -36,8 +34,7 @@ payloads\ftps5-p.elf
 payloads\getOsVersion.bin
 payloads\hwinfo-tornblom.elf
 payloads\KLOG SERVER.bin
-payloads\libhijacker-daemon-1.124.elf
-payloads\libhijacker-spawner-1.124.elf
+payloads\libhijacker-spawner-1.132.elf
 payloads\ps5-kstuff-v1.2.bin
 payloads\TO_4.50_4.03_99.99.elf
 payloads\versions.elf
