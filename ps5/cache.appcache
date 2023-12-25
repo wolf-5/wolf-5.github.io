@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Tue 12/12/2023 )
+# The Wolf Host 505 ( Mon 12/25/2023 )
 
 2main.css
 appcache_handler.js
@@ -27,7 +27,7 @@ offsets\4.51.js
 payloads\Browser_appCache_remove.elf
 payloads\dumpgame.bin
 payloads\elfldr.elf
-payloads\etaHEN-1.1b.bin
+payloads\etaHEN-1.2B.bin
 payloads\etaHENwithcheats-1.1b.bin
 payloads\fan_threshold.elf
 payloads\ftps5-p.elf

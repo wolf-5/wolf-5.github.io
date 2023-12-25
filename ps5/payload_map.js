@@ -1,5 +1,13 @@
 const payload_map =
     [
+	        {
+            displayTitle: 'etaHEN',
+            description: 'etaHEN 1.2b by LM',
+            fileName: 'etaHEN-1.2B',
+            author: 'LM',
+            source:'https://github.com/LightningMods/etaHEN',
+            version: '?'
+        },
         {
             displayTitle: 'HEN',
             description: 'FPKG enabler',
@@ -8,14 +16,7 @@ const payload_map =
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.1'
         },
-        {
-            displayTitle: 'etaHEN',
-            description: 'etaHEN 1.1b by LM',
-            fileName: 'etaHEN-1.1b.bin',
-            author: 'LM',
-            source:'https://github.com/LightningMods/etaHEN',
-            version: '?'
-        },
+
         {
             displayTitle: 'FTP PS5 R/W (P/S)',
             description: 'FTP Server for PS5',
