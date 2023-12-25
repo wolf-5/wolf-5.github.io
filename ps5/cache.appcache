@@ -28,7 +28,6 @@ payloads\Browser_appCache_remove.elf
 payloads\dumpgame.bin
 payloads\elfldr.elf
 payloads\etaHEN-1.2B.bin
-payloads\etaHENwithcheats-1.1b.bin
 payloads\fan_threshold.elf
 payloads\ftps5-p.elf
 payloads\getOsVersion.bin
