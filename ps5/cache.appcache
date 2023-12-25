@@ -27,13 +27,13 @@ offsets\4.51.js
 payloads\Browser_appCache_remove.elf
 payloads\dumpgame.bin
 payloads\elfldr.elf
-payloads\etaHEN-1.2B.bin
+payloads\etaHEN_1.2B.bin
 payloads\fan_threshold.elf
-payloads\ftps5-p.elf
+payloads\ftps5.elf
 payloads\getOsVersion.bin
 payloads\hwinfo-tornblom.elf
-payloads\KLOG SERVER.bin
-payloads\libhijacker-spawner-1.132.elf
-payloads\ps5-kstuff-v1.2.bin
-payloads\TO_4.50_4.03_99.99.elf
+payloads\KLOG_SERVER.bin
+payloads\libhijacker_spawner_1_132.elf
+payloads\ps5_kstuff_v1.2.bin
+payloads\spoff.elf
 payloads\versions.elf
