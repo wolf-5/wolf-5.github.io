@@ -36,7 +36,7 @@ function add_cache_event_toasts() {
     }
 
     appCache.addEventListener('cached', function (e) {
-        showToast('Cache Installed Successfully ✔.');
+        showToast('Cache Installed Successfully .');
     }, false);
 
      //appCache.addEventListener('checking', function (e) {

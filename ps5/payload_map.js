@@ -16,7 +16,6 @@ const payload_map =
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.2'
         },
-
         {
             displayTitle: 'FTP PS5 R/W (P/S)',
             description: 'FTP Server for PS5',
@@ -33,6 +32,14 @@ const payload_map =
             source: 'https://github.com/illusion0001/libhijacker/releases',
             loader: 'libhijacker',
             version: '1.132'
+        },
+		{
+            displayTitle: 'DumpGame',
+            description: 'DumpGame PS5',
+            fileName: 'dumpgame.bin',
+            author: '?',
+            source:'?',
+            version: '1.0'
         },
         {
             displayTitle: 'FAN CONTROL',
