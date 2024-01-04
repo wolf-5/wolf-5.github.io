@@ -2,11 +2,11 @@ const payload_map =
     [
 	        {
             displayTitle: 'etaHEN',
-            description: 'etaHEN 1.2b by LM',
-            fileName: 'etaHEN_1.2B.bin',
+            description: 'etaHEN 1.3B by LM',
+            fileName: 'etaHEN-1.3B.bin',
             author: 'LM',
             source:'https://github.com/LightningMods/etaHEN',
-            version: '1.2B'
+            version: '1.3B'
         },
         {
             displayTitle: 'HEN',
