@@ -2,11 +2,11 @@ const payload_map =
     [
 	        {
             displayTitle: 'etaHEN',
-            description: 'etaHEN 1.3B by LM',
-            fileName: 'etaHEN-1.3B.bin',
+            description: 'etaHEN 1.4B by LM',
+            fileName: 'etaHEN-1.4B.bin',
             author: 'LM',
             source:'https://github.com/LightningMods/etaHEN',
-            version: '1.3B'
+            version: '1.4B'
         },
         {
             displayTitle: 'HEN',
@@ -27,11 +27,11 @@ const payload_map =
         {
             displayTitle: 'LIBHIJACKER GAME-PACTH',
             description: '(v1.132) Patches supported games .',
-            fileName: 'libhijacker_spawner_1_132.elf',
+            fileName: 'libhijacker-1.138',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',
             loader: 'libhijacker',
-            version: '1.132'
+            version: '1.138'
         },
 		{
             displayTitle: 'DumpGame',
