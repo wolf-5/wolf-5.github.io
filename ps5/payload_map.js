@@ -9,22 +9,6 @@ const payload_map =
             version: '1.4B'
         },
         {
-            displayTitle: 'HEN',
-            description: 'FPKG enabler',
-            fileName: 'ps5_kstuff_v1.2.bin',
-            author: 'sleirsgoevy',
-            source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
-            version: '1.2'
-        },
-        {
-            displayTitle: 'FTP PS5 R/W (P/S)',
-            description: 'FTP Server for PS5',
-            fileName: 'ftps5.elf',
-            author: 'SiSTR0, zecoxao, EchoStretch',
-            source:'https://github.com/EchoStretch/FTPS5/releases',
-            version: '1.4'
-        },
-        {
             displayTitle: 'LIBHIJACKER GAME-PACTH',
             description: '(v1.132) Patches supported games .',
             fileName: 'libhijacker-1.138',
@@ -32,30 +16,6 @@ const payload_map =
             source: 'https://github.com/illusion0001/libhijacker/releases',
             loader: 'libhijacker',
             version: '1.138'
-        },
-		{
-            displayTitle: 'DumpGame',
-            description: 'DumpGame PS5',
-            fileName: 'dumpgame.bin',
-            author: '?',
-            source:'?',
-            version: '1.0'
-        },
-        {
-            displayTitle: 'FAN CONTROL',
-            description: 'fan threshold set 60° PS5',
-            fileName: 'fan_threshold.elf',
-            author: '?',
-            source:'?',
-            version: '1.0'
-        },
-        {
-            displayTitle: 'REVERSE THE FW 4.03/ 4.50 / 99.99',
-            description: 'Round trip 4.03 / 4.50 / 99.99 by Jaafar',
-            fileName: 'spoff.elf',
-            author: '?',
-            source:'?',
-            version: '1.0'
         },
         {
             displayTitle: 'PS5 BROWSER APP CACHE REMOVE',
