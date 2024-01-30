@@ -36,15 +36,15 @@ function add_cache_event_toasts() {
     }
 
     appCache.addEventListener('cached', function (e) {
-        showToast('Cache Installed Successfully .');
+        showToast('Finished caching site.');
     }, false);
 
-     //appCache.addEventListener('checking', function (e) {
-     //    showToast('Checking for updates.');
-     //}, false);
+    // appCache.addEventListener('checking', function (e) {
+    //     showToast('Checking for updates.');
+    // }, false);
 
     appCache.addEventListener('downloading', function (e) {
-        showToast('Installing Offline Cache');
+        showToast('Downloading new cache.');
     }, false);
 
     appCache.addEventListener('error', function (e) {

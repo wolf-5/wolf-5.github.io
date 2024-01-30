@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Wed 01/17/2024 )
+# The Wolf Host 505 ( Tue 01/30/2024 )
 
 appcache_handler.js
 custom_host_stuff.js
@@ -10,9 +10,14 @@ main.css
 payload_map.js
 rop.js
 rop_slave.js
-service_worker.js
-webkit.js
-offsets\-4.03.js
+webkit_fontface.js
+webkit_psfree.js
+module\constants.js
+module\int64.js
+module\mem.js
+module\memtools.js
+module\rw.js
+module\utils.js
 offsets\3.00.js
 offsets\3.10.js
 offsets\3.20.js
@@ -23,7 +28,13 @@ offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
 payloads\Browser_appCache_remove.elf
+payloads\elfldr.elf
 payloads\etaHEN-1.4B.bin
-payloads\hwinfo-tornblom.elf
-payloads\libhijacker-1.138.elf
+payloads\ftps5-np.elf
+payloads\ftps5-p.elf
+payloads\getOsVersion.elf
+payloads\henv.elf
+payloads\libhijacker-1.142.elf
+payloads\ps5-kstuff-v1.4.bin
+payloads\ps5debug.elf
 payloads\versions.elf
