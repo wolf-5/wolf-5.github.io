@@ -9,7 +9,6 @@ index.html
 int64.js
 kexploit.js
 rop.js
-test.txt
 img\AppToUsb.png
 img\binloader.png
 img\CopyCH.png
@@ -39,6 +38,14 @@ img\updat.png
 img\urtrainer.png
 img\Web-Activator.png
 img\WebRTE.png
+module\chain.mjs
+module\constants.mjs
+module\int64.mjs
+module\mem.mjs
+module\memtools.mjs
+module\offset.mjs
+module\rw.mjs
+module\utils.mjs
 paylode\app2usb.bin.bz2
 paylode\arabicguy100.bin.bz2
 paylode\arabicguy127.bin.bz2
