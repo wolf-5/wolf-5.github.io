@@ -1,0 +1,19 @@
+CACHE MANIFEST 
+# The Wolf Host 900n ( Tue 01/30/2024 )
+module\chain.mjs
+module\constants.mjs
+module\int64.mjs
+module\mem.mjs
+module\memtools.mjs
+module\offset.mjs
+module\rw.mjs
+module\utils.mjs
+alert.mjs
+cache.html
+config.mjs
+exploit.mjs
+goldhenv24b15.bin
+index.html
+int64.js
+kexploit.js
+rop.js
