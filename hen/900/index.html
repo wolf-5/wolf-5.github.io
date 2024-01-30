@@ -35,6 +35,8 @@ display: block;
 }
 </style>
 <script>
+if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+
 function loadBIN(){
  var req = new XMLHttpRequest();
  req.responseType = "arraybuffer";
@@ -74,7 +76,7 @@ function goldhen4b15(){
 }
 </script>
 <script>
-if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+
 function load_Bloader(){
     progress.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading NetCat Bin Server Port 9020!!!</h1>";
     var payload_buffer = chain.syscall(477, 0x0, 0x300000, 0x7, 0x1000, 0xFFFFFFFF, 0);
