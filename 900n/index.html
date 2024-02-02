@@ -306,7 +306,7 @@ if(sessionStorage.Payload!="yes"){setTimeout(load_poc2, 500);} else {load_pocB()
 
 function load_goldhenv24b16(){
     progress.innerHTML="GoldHEN v.2.4b16 loading... please wait";
-    LoadedMSG="GoldHEN v.2.4b15 Loaded";
+    LoadedMSG="GoldHEN v.2.4b16 Loaded";
     PLfile = "./paylode/goldhenv24b16.bin";
     out_jb = "AllPL";
     load_pocB();
@@ -485,13 +485,6 @@ function load_toolbox(){
     progress.innerHTML="Payload....(toolbox ps4)"; LoadedMSG="Loaded (toolbox ps4)";
     setTimeout(function(){ let array = loadFile('./paylode/toolbox.bin.bz2');}, 50);
     out_jb = "AllPL";     setTimeout(load_pocj, 500);
-}
-function load_mainmenu(){
-progress.innerHTML="<h1 style='font-size:25px;text-align:center;'>Going to Main Menu!!!</h1>";
-var link = document.createElement('a');
-document.body.appendChild(link);
-link.href = '../index.html';
-link.click();  
 }
 
 </script>
