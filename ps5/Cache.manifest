@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Tue 01/30/2024 )
+# The Wolf Host 900n ( Fri 02/09/2024 )
 
 appcache_handler.js
 custom_host_stuff.js
@@ -29,7 +29,7 @@ offsets\4.50.js
 offsets\4.51.js
 payloads\Browser_appCache_remove.elf
 payloads\elfldr.elf
-payloads\etaHEN-1.4B.bin
+payloads\etaHEN-1.5B.bin
 payloads\ftps5-np.elf
 payloads\ftps5-p.elf
 payloads\getOsVersion.elf

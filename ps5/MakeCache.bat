@@ -1,13 +1,13 @@
 @echo off
 echo CACHE MANIFEST > test0.txt
-echo # The Wolf Host 505 ( %date% )>> test0.txt
+echo # The Wolf Host 900n ( %date% )>> test0.txt
 echo. >> test0.txt
 
 set LOC=%~dp0
 
 dir /B /S /A:-D >> test0.txt
 
-findstr /v "media .bat .exe .mp4 .git .rar cache.appcache test0.txt" test0.txt > test.txt
+findstr /v "Light .bat .exe .mp4 .git .rar Cache.manifest test0.txt" test0.txt > test.txt
 del test0.txt
 
 @echo off
@@ -27,9 +27,9 @@ set "firstLineReady="
 if defined firstLineReady (echo()
 set "firstLineReady=1"
 <nul set /p "=%%a")
-) > cache.appcache
+) > Cache.manifest
 del test.txt
 
-echo cache.appcache created!!
+echo Cache.manifest created!!
 
 sleep 2
