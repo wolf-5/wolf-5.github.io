@@ -3,7 +3,7 @@ text-shadow: 0.1em 0.1em 0.2em black;
 text-align: center;
 color: white;
 }
-body{background-color:black;color: #f5f1f1;border: 5px solid #f30505;font-size:5px;text-align:center;}
+body{background-color:black;color: #f5f1f1;border: 5px solid #f30505;}
 
 .lds-ellipsis {
     display: inline-block;
