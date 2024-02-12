@@ -7,7 +7,7 @@ set LOC=%~dp0
 
 dir /B /S /A:-D >> test0.txt
 
-findstr /v " payloads .bat .exe .mp4 .git .rar cache.appcache test0.txt" test0.txt > test.txt
+findstr /v " .bat .exe .mp4 .git .rar cache.appcache test0.txt" test0.txt > test.txt
 del test0.txt
 
 @echo off
