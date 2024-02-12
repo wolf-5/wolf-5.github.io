@@ -1,21 +1,17 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Wed 01/31/2024 )
+# The Wolf Host 505 ( Mon 02/12/2024 )
 
 apptousb.bin
 backup.bin
 beefqueef138.bin
 beefqueef147.bin
 beefqueef148.bin
-binloader.js
 cache.html
-cal.js
 CopyCH.bin
 disableupdates.bin
 dumper.bin
 enableupdates.bin
 exploit.js
-exploit_bin_x2.js
-exploit_bin_x3.js
 fan50.bin
 fan55.bin
 fan60.bin
