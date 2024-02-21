@@ -17,12 +17,14 @@ font-size: 25px;
 text-align: center;
 color: white;
 }
+
 .TextCaption{
 display: block;
     font-size: 20px;
     color: #fff;
     text-decoration: none;
 }
+
 a img {
     display: inline-block;  text-decoration: none;
 }
@@ -30,9 +32,16 @@ a {
     display: inline-block;  text-decoration: none;
 }
 
-a:hover img, a:hover .TextCaption{
-transform: scale(1.1)
-
+a:hover {
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
 }
 </style>
 <script>if (window.applicationCache.status=='0'){window.location.replace("cache.html");}</script>
