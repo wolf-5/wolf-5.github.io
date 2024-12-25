@@ -1,6 +1,7 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Mon 02/12/2024 )
+# The Wolf Host 505 ( Sat 05/11/2024 )
 
+binloader.js
 cache.html
 exploit.js
 index.html
@@ -41,43 +42,25 @@ paylode\CopyCH.bin
 paylode\disableupdates.bin
 paylode\dumper.bin
 paylode\enableupdates.bin
-paylode\fan50.bin
-paylode\fan55.bin
-paylode\fan60.bin
-paylode\fan65.bin
-paylode\fan70.bin
-paylode\fan75.bin
-paylode\fan80.bin
+paylode\fan-threshold50.bin
+paylode\fan-threshold55.bin
+paylode\fan-threshold60.bin
+paylode\fan-threshold65.bin
+paylode\fan-threshold70.bin
+paylode\fan-threshold75.bin
 paylode\ftp.bin
-paylode\goldhenv24b16.bin
+paylode\goldhen.bin
 paylode\gtaArabicGuy100.bin
 paylode\gtaArabicGuy127.bin
 paylode\gtaArabicGuy132.bin
 paylode\gtaArabicGuy133.bin
-paylode\gtaDope127.bin
-paylode\gtaIntense.bin
-paylode\gtaIntense127.bin
-paylode\gtaLamance.bin
-paylode\gtaLamance127.bin
-paylode\gtaLamance138.bin
-paylode\gtaLotus127.bin
-paylode\gtaLTS127.bin
-paylode\gtaNotAnother.bin
-paylode\gtaNotAnother127.bin
-paylode\gtaPsych0s.bin
-paylode\gtaTrainer.bin
-paylode\gtaWildeModZ.bin
-paylode\gtaWildeModz127.bin
-paylode\gtawildemodz138.bin
 paylode\kernelclock.bin
-paylode\linux1GB.bin
-paylode\linux2GB.bin
-paylode\linux3GB.bin
-paylode\linuxEeply.bin
-paylode\linuxInternal.bin
-paylode\LinuxNOedidy.bin
-paylode\linuxVul.bin
-paylode\mira.bin
+paylode\Lamance138.bin
+paylode\Linux-1gb.bin
+paylode\Linux-2gb.bin
+paylode\Linux-3gb.bin
+paylode\Linux-4gb.bin
+paylode\Linux-5gb.bin
 paylode\oystersmenu100.bin
 paylode\oystersmenu113.bin
 paylode\oystersmenu119.bin
@@ -89,4 +72,8 @@ paylode\restore.bin
 paylode\todex.bin
 paylode\toolbox.bin
 paylode\webrte.bin
+paylode\WildeModz127.bin
+paylode\WildeModz132.bin
+paylode\WildeModz133.bin
+paylode\WildeModz138.bin
 paylode\WildeModz147.bin

@@ -1,5 +1,5 @@
 <html>
-<head>
+<meta charset="utf-8">
 <title>The Wolf 9.00 [GoldHEN gold hen v2.4b16] </title>
 <style>
 html, body {
@@ -12,26 +12,14 @@ text-align: center;
 margin: 0px;
 overflow: hidden;
 }
-body{background: 
-linear-gradient
-(to bottom right)
-;font-size:20px
-}
-.info
-{position:
-relative;top:30%;
-}
 h1 {
 text-shadow: 0.1em 0.1em 0.2em black;
-font-size: 20px;
+font-size: 25px;
 text-align: center;
 color: white;
 }
-.TextCaption{
-display: block;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
+a {
+text-decoration: none;
 }
 </style>
 <script>
@@ -61,115 +49,44 @@ function loadBIN(){
 }
 
 function jbdone() {
-goldhen4b16();
+goldhen();
 }
 
 function allset() {
 window.progress.innerHTML= LoadedMSG
 }
 
-function goldhen4b16(){
-    progress.innerHTML="Goldhen 2.4b16 loading... please wait";
-    LoadedMSG="GoldHEN 2.4b16 Loaded";
-    PLfile = "goldhenv24b16.bin";
+function goldhen(){
+    progress.innerHTML="Gold hen loading... please wait";
+    LoadedMSG="GoldHEN Loaded";
+    PLfile = "goldhen.bin";
     setTimeout(loadBIN,50);
 }
-</script>
-<script>
 
-function load_Bloader(){
-    progress.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading NetCat Bin Server Port 9020!!!</h1>";
-    var payload_buffer = chain.syscall(477, 0x0, 0x300000, 0x7, 0x1000, 0xFFFFFFFF, 0);
-    var payload_loader = p.malloc32(0x1000);
-    var loader_writer = payload_loader.backing;
-    loader_writer[0] = 0x56415741;
-    loader_writer[1] = 0x83485541;
-    loader_writer[2] = 0x894818EC;
-    loader_writer[3] = 0xC748243C;
-    loader_writer[4] = 0x10082444;
-    loader_writer[5] = 0x483C2302;
-    loader_writer[6] = 0x102444C7;
-    loader_writer[7] = 0x00000000;
-    loader_writer[8] = 0x000002BF;
-    loader_writer[9] = 0x0001BE00;
-    loader_writer[10] = 0xD2310000;
-    loader_writer[11] = 0x00009CE8;
-    loader_writer[12] = 0xC7894100;
-    loader_writer[13] = 0x8D48C789;
-    loader_writer[14] = 0xBA082474;
-    loader_writer[15] = 0x00000010;
-    loader_writer[16] = 0x000095E8;
-    loader_writer[17] = 0xFF894400;
-    loader_writer[18] = 0x000001BE;
-    loader_writer[19] = 0x0095E800;
-    loader_writer[20] = 0x89440000;
-    loader_writer[21] = 0x31F631FF;
-    loader_writer[22] = 0x0062E8D2;
-    loader_writer[23] = 0x89410000;
-    loader_writer[24] = 0x2C8B4CC6;
-    loader_writer[25] = 0x45C64124;
-    loader_writer[26] = 0x05EBC300;
-    loader_writer[27] = 0x01499848;
-    loader_writer[28] = 0xF78944C5;
-    loader_writer[29] = 0xBAEE894C;
-    loader_writer[30] = 0x00001000;
-    loader_writer[31] = 0x000025E8;
-    loader_writer[32] = 0x7FC08500;
-    loader_writer[33] = 0xFF8944E7;
-    loader_writer[34] = 0x000026E8;
-    loader_writer[35] = 0xF7894400;
-    loader_writer[36] = 0x00001EE8;
-    loader_writer[37] = 0x2414FF00;
-    loader_writer[38] = 0x18C48348;
-    loader_writer[39] = 0x5E415D41;
-    loader_writer[40] = 0x31485F41;
-    loader_writer[41] = 0xC748C3C0;
-    loader_writer[42] = 0x000003C0;
-    loader_writer[43] = 0xCA894900;
-    loader_writer[44] = 0x48C3050F;
-    loader_writer[45] = 0x0006C0C7;
-    loader_writer[46] = 0x89490000;
-    loader_writer[47] = 0xC3050FCA;
-    loader_writer[48] = 0x1EC0C748;
-    loader_writer[49] = 0x49000000;
-    loader_writer[50] = 0x050FCA89;
-    loader_writer[51] = 0xC0C748C3;
-    loader_writer[52] = 0x00000061;
-    loader_writer[53] = 0x0FCA8949;
-    loader_writer[54] = 0xC748C305;
-    loader_writer[55] = 0x000068C0;
-    loader_writer[56] = 0xCA894900;
-    loader_writer[57] = 0x48C3050F;
-    loader_writer[58] = 0x006AC0C7;
-    loader_writer[59] = 0x89490000;
-    loader_writer[60] = 0xC3050FCA;
-    chain.syscall(74, payload_loader, 0x4000, (0x1 | 0x2 | 0x4));
-    var pthread = p.malloc(0x10);
-    //
-    {
-        chain.fcall(window.syscalls[203], payload_buffer, 0x300000);
-        chain.fcall(libKernelBase.add32(OFFSET_lk_pthread_create), pthread, 0x0, payload_loader, payload_buffer);
-    }
-    chain.run();
-    awaitpl();
+function startpoc() {
+	StartTimer();
+	setTimeout(run_psfree,1500);
 }
-
+	
+function CalcTime(dur){hrs=Math.floor(dur/1000/60/60);min=Math.floor(dur/1000/60-hrs*60);sec=Math.floor(dur/1000-min*60);mil=dur.toString().slice(-3);if (min!=0){ShowDuration=" - WK Exploited In : "+min+" minute"+(min==1?"":"s")+", "+sec+" second"+(sec==1?"":"s");}else {ShowDuration=" - WK Exploited In: "+sec+" second"+(sec==1?"":"s");}}
+function StartTimer(){StartTime=Date.now();}
+function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);document.title+=ShowDuration;}
 </script>
-
-<script src="./int64.js"></script>
-<script src="./rop.js"></script>
-<script src="./kexploit.js"></script>
-<script type=module src="./alert.mjs"></script>
-
+    <script defer src="int64.js"></script>
+    <script defer src="rop.js"></script>
+    <script defer src="exploit.js"></script>
+    <script defer src="module/utils.js"></script>
+    <script defer src="module/constants.js"></script>
+    <script defer src="module/int64.js"></script>
+    <script defer src="module/mem.js"></script>
+    <script defer src="module/memtools.js"></script>
+    <script defer src="module/rw.js"></script>
+    <script defer src="webkit_psfree.js"></script>
 </head>
-
-<br><br><br><br>
-<h1 id=progress style='font-size:30px;text-align:center;'>Jailbreaking <font color=#fc0404> ( Please wait ) ....</h1>
-
-</a></h1>
-<a  style="margin-top: 240px;">
-<h1 style="margin-top: 440px; color: red;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:white; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:white; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:white; margin-left: 15px;">@Znullptr</a><a style="color:white; margin-left: 15px;">All developers who contributed to the ps4 scene ...</a></h1>
-</div>
+<br><br><br><br><br><br>
+<body onload="setTimeout(startpoc,50);">
+<h1 id=progress style="font-size: 30px;margin-top: 77px;margin-bottom: 250px;">Jailbreaking <font color=#fc0404> ( Please wait ) ....</h1>
+<br>
+<h1 style="margin-top: 170px; color: red;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:white; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:white; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:white; margin-left: 15px;">@Znullptr</a><br><a style="color:white; margin-left: 15px;">All developers who contributed to the ps4 scene ...</a></h1>
 </body>
 </html>
-

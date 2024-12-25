@@ -1,13 +1,7 @@
 CACHE MANIFEST 
-# The Wolf Host 505 ( Wed 01/31/2024 )
+# The Wolf Host 505 ( Fri 05/10/2024 )
 
 cache.html
-common.js
-goldhenv24b16.bin
+exploit.js
+goldhen.bin
 index.html
-kernelExploit_bpf_double_free.js
-offsets.js
-rop.js
-userland.js
-webkitExploit_haveABadTime.js
-webkitExploit_stackUnitializedRead.js

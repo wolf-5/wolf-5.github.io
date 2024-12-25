@@ -17,7 +17,6 @@ font-size: 25px;
 text-align: center;
 color: white;
 }
-
 .TextCaption{
 display: block;
     font-size: 20px;
@@ -46,7 +45,7 @@ a:hover {
 </style>
 <script>if (window.applicationCache.status=='0'){window.location.replace("cache.html");}</script>
 <br><br><br><br>
-<body onload="goYesNo()">
+<body onload="exploit()">
 <script src="exploit.js"></script>
 <h1 id=msgs style='font-size:25px;text-align:center;'>Jailbreaking <font color=#fc0404> ( Please wait ) ....</h1>
 <div id=all style="text-align:center;display:none">
@@ -67,7 +66,7 @@ a:hover {
 (document.getElementById('spoiler6') .style.display='none');
 (document.getElementById('spoiler7') .style.display='none')
 (document.getElementById('spoiler8') .style.display='none');}else{document.getElementById('spoiler2') .style.display='none'}"> 
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="goldhenv24b16()"onMouseOver="msgs.innerHTML='GoldHen v2.4.b16 By SiSTRO'"><img src=img/hen.png></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_goldhen()"onMouseOver="msgs.innerHTML='Gold HenBy SiSTRO'"><img src=img/hen.png></a>
 </href><href id="cnmuhide4"  onmouseover="if(document.getElementById('spoiler3') .style.display=='none') 
 {
 (document.getElementById('spoiler2') .style.display='none');
@@ -130,101 +129,81 @@ a:hover {
 &nbsp;&nbsp;&nbsp;<a href="#"><img src=img/gta1.png></a>
 </href></center>
 <div id="spoiler2" style="display:none"> <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="goldhenv24b()"onMouseOver="msgs.innerHTML='GoldHen v2.4.b15 By SiSTRO'"><a href="#"><img =img/.png></a><span class="TextCaption"></span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_goldhenv24b()"onMouseOver="msgs.innerHTML='GoldHen v2.4.b15 By SiSTRO'"><a href="#"><img =img/.png></a><span class="TextCaption"></span></a>
 </div>
 <div id="spoiler3" style="display:none"> <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="LinuxLoader1gb()" onMouseOver="msgs.innerHTML='Run Linux1GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 1G</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="LinuxLoader2gb()" onMouseOver="msgs.innerHTML='Run Linux2GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 2G</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="LinuxLoader3gb()" onMouseOver="msgs.innerHTML='Run Linux3GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 3G</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="LinuxEeply()" onMouseOver="msgs.innerHTML='Run Linux Eeply on PS4'"><img src=img/linux.png><span class="TextCaption">Linux Eeply</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="LinuxInternal()" onMouseOver="msgs.innerHTML='Run Linux Internal on PS4'"><img src=img/linux.png><span class="TextCaption">Linux Internal</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="LinuxNOedidy()" onMouseOver="msgs.innerHTML='Run Linux NOedid on PS4'"><img src=img/linux.png><span class="TextCaption">Linux NOedid</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="LinuxVul()" onMouseOver="msgs.innerHTML='Run Linux Vul on PS4'"><img src=img/linux.png><span class="TextCaption">Linux Vul</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader1gb()" onMouseOver="msgs.innerHTML='Run Linux1GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 1G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader2gb()" onMouseOver="msgs.innerHTML='Run Linux2GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 2G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader3gb()" onMouseOver="msgs.innerHTML='Run Linux3GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 3G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader4gb()" onMouseOver="msgs.innerHTML='Run Linux4GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 4G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader5gb()" onMouseOver="msgs.innerHTML='Run Linux5GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 5G</span></a>
 </div>
 <div id="spoiler4" style="display:none">
 &nbsp;&nbsp;&nbsp;<a href="https://pkg-zone.com/install" onMouseOver="progress.innerHTML='You can now install the Homebrew Store using only the PKG-Zone website through the Browser!'"><img src=img/hb.png><span class="TextCaption"> install HB Store</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="Dumper()"onMouseOver="msgs.innerHTML='It Is The Process Pf Copying CD PS4 And Putting It On USB'"><img src=img/Dumper.png><span class="TextCaption">Dumper</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="AppToUsb()"onMouseOver="msgs.innerHTML='Move installed games to an external USB drive'"><img src=img/App2usb.png><span class="TextCaption">App2usb</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="FTP()"onMouseOver="msgs.innerHTML='Transfer files from PC to PS4'"><img src=img/ftp.png><span class="TextCaption">FTP</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="binloader()"onMouseOver="msgs.innerHTML='Loads a bin file sent to the PS4 IP address on port 9021'"><img src=img/binloader.png><span class="TextCaption">Bin Loader</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="ps4debug()"onMouseOver="msgs.innerHTML='This is a debugger for PlayStation 4 and a save transfer for games without a PC without PC'"><img src=img/actevat.png><span class="TextCaption">Ps4 Debug Offline</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Dumper()"onMouseOver="msgs.innerHTML='It Is The Process Pf Copying CD PS4 And Putting It On USB'"><img src=img/Dumper.png><span class="TextCaption">Dumper</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_AppToUsb()"onMouseOver="msgs.innerHTML='Move installed games to an external USB drive'"><img src=img/App2usb.png><span class="TextCaption">App2usb</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_FTP()"onMouseOver="msgs.innerHTML='Transfer files from PC to PS4'"><img src=img/ftp.png><span class="TextCaption">FTP</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_binloader()"onMouseOver="msgs.innerHTML='Loads a bin file sent to the PS4 IP address on port 9021'"><img src=img/binloader.png><span class="TextCaption">Bin Loader</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_ps4debug()"onMouseOver="msgs.innerHTML='This is a debugger for PlayStation 4 and a save transfer for games without a PC without PC'"><img src=img/actevat.png><span class="TextCaption">Ps4 Debug Offline</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_pkgbackup()" onMouseOver="msgs.innerHTML='This is a pkg backup for usb'"><img src=img/pkg.png><span class="TextCaption">PKG Backup</span></a>
 
 <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="Restore()"onMouseOver="msgs.innerHTML='Restores the data saved in the Backup payload'"><img src=img/Restore.png><span class="TextCaption">Restore</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="Backup()"onMouseOver="msgs.innerHTML='Backs up your PS4 databases licenses and user data'"><img src=img/Backup.png><span class="TextCaption">Backup</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="todex()"onMouseOver="msgs.innerHTML='Spoofs the target ID to match that of a testkit'"><img src=img/todex.png><span class="TextCaption">Todex</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="Toolbox()"onMouseOver="msgs.innerHTML='Toolbox By Legendary OSM'"><img src=img/Toolbox.png><span class="TextCaption">TOOLBOX</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="KernelClock()"onMouseOver="msgs.innerHTML='Changes the internal clock of the PS4'"><img src=img/KernelClock.png><span class="TextCaption">Kernel-Clock</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Restore()"onMouseOver="msgs.innerHTML='Restores the data saved in the Backup payload'"><img src=img/Restore.png><span class="TextCaption">Restore</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Backup()"onMouseOver="msgs.innerHTML='Backs up your PS4 databases licenses and user data'"><img src=img/Backup.png><span class="TextCaption">Backup</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_todex()"onMouseOver="msgs.innerHTML='Spoofs the target ID to match that of a testkit'"><img src=img/todex.png><span class="TextCaption">Todex</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Toolbox()"onMouseOver="msgs.innerHTML='Toolbox By Legendary OSM'"><img src=img/Toolbox.png><span class="TextCaption">TOOLBOX</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_KernelClock()"onMouseOver="msgs.innerHTML='Changes the internal clock of the PS4'"><img src=img/KernelClock.png><span class="TextCaption">Kernel-Clock</span></a>
 <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="Defaul()" onMouseOver="msgs.innerHTML='FAN SPEED 75'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED ( Default )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="FAN50()" onMouseOver="msgs.innerHTML='FAN SPEED 50'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED ( 50 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="FAN55()" onMouseOver="msgs.innerHTML='FAN SPEED 55'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED ( 55 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="FAN60()" onMouseOver="msgs.innerHTML='FAN SPEED 60'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED ( 60 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="FAN65()" onMouseOver="msgs.innerHTML='FAN SPEED 65'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED ( 65 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="FAN70()" onMouseOver="msgs.innerHTML='FAN SPEED 70'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED ( 70 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="FAN75()" onMouseOver="msgs.innerHTML='FAN SPEED 75'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED ( 75 )</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_fanthreshold()" onMouseOver="msgs.innerHTML='FAN SPEED'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED</span></a><select id="tempC"></select>°C
 </div>
 <div id="spoiler5" style="display:none"> <br>
-<a href="#" onclick="UpdatesDisable()"onMouseOver="msgs.innerHTML='Disable ps4 updates'"><img src=img/UpdatesDisable.png><span class="TextCaption">Disable</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="UpdatesEnable()"onMouseOver="msgs.innerHTML='Enable ps4 updates'"><img src=img/UpdatesEnable.png><span class="TextCaption">Enable</span></a>
+<a href="#" onclick="load_disableUpdates()"onMouseOver="msgs.innerHTML='Disable ps4 updates'"><img src=img/UpdatesDisable.png><span class="TextCaption">Disable</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_enablebUpdates()"onMouseOver="msgs.innerHTML='Enable ps4 updates'"><img src=img/UpdatesEnable.png><span class="TextCaption">Enable</span></a>
 </div>
 <div id="spoiler6" style="display:none"> <br>
-<a href="#" onclick="WebRTE()"onMouseOver="msgs.innerHTML='WebRTE PS4 TRAINER'"><img src=img/WebRTE.png><span class="TextCaption">WebRTE</span></a>
+<a href="#" onclick="load_webrte()"onMouseOver="msgs.innerHTML='WebRTE PS4 TRAINER'"><img src=img/WebRTE.png><span class="TextCaption">WebRTE</span></a>
 &nbsp;&nbsp;&nbsp;<a href="http://wolf2022.ir/trainer/index.html"onMouseOver="msgs.innerHTML='PS4 TRAINER Offline'"><img src=img/TRAINER.png><span class="TextCaption">TRAINER Offline</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_RestoreDB()" onMouseOver="msgs.innerHTML='New Payload for copy json and shn files from USB to PS4 GoldHen path' "><img src=img/RestoreDB.png><span class="TextCaption">Copy ( json OR Shn ) USB </span></a>
 </div>
 <div id="spoiler8" style="display:none"><br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaArabicGuy132()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.32'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 1.32</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaArabicGuy133()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.33'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 1.33</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaLamance138()"onMouseOver="msgs.innerHTML='GTA MOD Lamance 1.38'"><img src=img/gta.png><span class="TextCaption">Lamance 1.38</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtabeefqueef138()"onMouseOver="msgs.innerHTML='GTA MOD beefqueef 1.38'"><img src=img/gta.png><span class="TextCaption">Beef Queef 1.38</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtawildemodz138()"onMouseOver="msgs.innerHTML='GTA MOD Wilde Modz  1.38'"><img src=img/gta.png><span class="TextCaption">Wilde Modz 1.38</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="WildeModz147()"onMouseOver="msgs.innerHTML='GTA MOD Wilde Modz 1.47'"><img src=img/gta.png><span class="TextCaption">Wilde Modz 1.47</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="Beefqueefmod147()" onMouseOver="msgs.innerHTML='BeefQueefMod For GTA V Update v1.47 - By GraFfiX'"><img src=img/gta.png><span class="TextCaption">Beef Queef 1.47</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_gtaArabicGuy100()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.00'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 100</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_gtaArabicGuy127()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.27'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 1.27</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_gtaArabicGuy132()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.32'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 1.32</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_gtaArabicGuy133()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.33'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 1.33</span></a>
 <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaArabicGuy127()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.27'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 1.27</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaWildeModz127()"onMouseOver="msgs.innerHTML='GTA MOD WildeModz 1.27'"><img src=img/gta.png><span class="TextCaption">WildeModz 1.27</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaDope127()"onMouseOver="msgs.innerHTML='GTA MOD Dope 1.27'"><img src=img/gta.png><span class="TextCaption">Dope 1.27</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaIntense127()"onMouseOver="msgs.innerHTML='GTA MOD Intense 1.27'"><img src=img/gta.png><span class="TextCaption">Intense 1.27</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaLotus127()"onMouseOver="msgs.innerHTML='GTA MOD Lotus 1.27'"><img src=img/gta.png><span class="TextCaption">Lotus 1.27</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaLTS127()"onMouseOver="msgs.innerHTML='GTA MOD LTS 1.27'"><img src=img/gta.png><span class="TextCaption">LTS 1.27</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaNotAnother127()"onMouseOver="msgs.innerHTML='GTA MOD Not Another 1.27'"><img src=img/gta.png><span class="TextCaption">Not Another 1.27</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_gtaLamance138()"onMouseOver="msgs.innerHTML='GTA MOD Lamance 1.38'"><img src=img/gta.png><span class="TextCaption">Lamance 1.38</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Beefqueef138()"onMouseOver="msgs.innerHTML='GTA MOD beefqueef 1.38'"><img src=img/gta.png><span class="TextCaption">Beef Queef 1.38</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Beefqueef147()" onMouseOver="msgs.innerHTML='BeefQueefMod For GTA V Update v1.47 - By GraFfiX'"><img src=img/gta.png><span class="TextCaption">Beef Queef 1.47</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Beefqueef148()"onMouseOver="msgs.innerHTML='GTA MOD beefqueef 1.48'"><img src=img/gta.png><span class="TextCaption">Beef Queef 1.48</span></a>
+<br><br>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_WildeModz127()"onMouseOver="msgs.innerHTML='GTA MOD Wilde Modz 1.32'"><img src=img/gta.png><span class="TextCaption">Wilde Modz 1.27</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_WildeModz132()"onMouseOver="msgs.innerHTML='GTA MOD Wilde Modz 1.32'"><img src=img/gta.png><span class="TextCaption">Wilde Modz 1.32</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_WildeModz133()"onMouseOver="msgs.innerHTML='GTA MOD Wilde Modz 1.33'"><img src=img/gta.png><span class="TextCaption">Wilde Modz 1.33</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_WildeModz138()"onMouseOver="msgs.innerHTML='GTA MOD Wilde Modz 1.38'"><img src=img/gta.png><span class="TextCaption">Wilde Modz 1.38</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_WildeModz147()"onMouseOver="msgs.innerHTML='GTA MOD Wilde Modz 1.47'"><img src=img/gta.png><span class="TextCaption">Wilde Modz 1.47</span></a>
 <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaArabicGuy100()"onMouseOver="msgs.innerHTML='GTA MOD ArabicGuy 1.00'"><img src=img/gta.png><span class="TextCaption">ArabicGuy 100</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaNotAnother()"onMouseOver="msgs.innerHTML='GTA MOD Not Another 1.00'"><img src=img/gta.png><span class="TextCaption">Not Another 1.00</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaLamance()"onMouseOver="msgs.innerHTML='GTA MOD Lamance 1.00'"><img src=img/gta.png><span class="TextCaption">Lamance 1.00</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaIntense()"onMouseOver="msgs.innerHTML='GTA MOD Intense 1.00'"><img src=img/gta.png><span class="TextCaption">Lntense 1.00</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaPsych0s()"onMouseOver="msgs.innerHTML='GTA MOD Psych0 1.00'"><img src=img/gta.png><span class="TextCaption">Psych0 1.00</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaTrainer()"onMouseOver="msgs.innerHTML='GTA MOD Trainer 1.00'"><img src=img/gta.png><span class="TextCaption">Trainer 1.00</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="gtaWildeModZ()"onMouseOver="msgs.innerHTML='GTA MOD WildeModz 1.00'"><img src=img/gta.png><span class="TextCaption">WildeModz 1.00</span></a>
 </div>
 <div id="spoiler7" style="display:none"> <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="red100()"onMouseOver="msgs.innerHTML='Red Dead Redemption 2 MOD 1.00'"><img src=img/rde.png><span class="TextCaption">Rd2( 1.00 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="red113()"onMouseOver="msgs.innerHTML='Red Dead Redemption 2 MOD 1.13'"><img src=img/rde.png><span class="TextCaption">Rd2 ( 1.13 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="red119()"onMouseOver="msgs.innerHTML=' Red Dead Redemption 2 MOD 1.19'"><img src=img/rde.png><span class="TextCaption">Rd2( 1.19 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="red124()"onMouseOver="msgs.innerHTML=' Red Dead Redemption 2 MOD 1.24'"><img src=img/rde.png><span class="TextCaption">Rd2 ( 1.24 )</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="red129()"onMouseOver="msgs.innerHTML=' Red Dead Redemption 2 MOD 1.29'"><img src=img/rde.png><span class="TextCaption">Rd2 ( 1.29 )</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_red100()"onMouseOver="msgs.innerHTML='Red Dead Redemption 2 MOD 1.00'"><img src=img/rde.png><span class="TextCaption">Rd2( 1.00 )</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_red113()"onMouseOver="msgs.innerHTML='Red Dead Redemption 2 MOD 1.13'"><img src=img/rde.png><span class="TextCaption">Rd2 ( 1.13 )</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_red119()"onMouseOver="msgs.innerHTML=' Red Dead Redemption 2 MOD 1.19'"><img src=img/rde.png><span class="TextCaption">Rd2( 1.19 )</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_red124()"onMouseOver="msgs.innerHTML=' Red Dead Redemption 2 MOD 1.24'"><img src=img/rde.png><span class="TextCaption">Rd2 ( 1.24 )</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_red129()"onMouseOver="msgs.innerHTML=' Red Dead Redemption 2 MOD 1.29'"><img src=img/rde.png><span class="TextCaption">Rd2 ( 1.29 )</span></a>
 </div>
 <br><br>
 <a  style="margin-top: 175px;">
 <h1 style="margin-top: 15px; color: red;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:white; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:white; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:white; margin-left: 15px;">@Znullptr</a><a style="color:white; margin-left: 15px;">All developers who contributed to the ps4 scene ...</a></h1>
 <script>
-function defaultTXT(){
+function success(){
 msgs.innerHTML="Wolf 5.05 Exploit Menu";
 all.style.display = "block";
 }
 
-function showwolf(){
-localStorage.ps4trn="yes";
-all.style.display = "block";
+function allset(){
+msgs.innerHTML = LoadedMSG
 }
 
-function plLoadedMSG(){
-msgs.innerHTML=PLdone;
-}
-
-function PayloadLoader(){
+function load_payload(){
 req1=null;
 var req1=new XMLHttpRequest();
 req1.open('GET',PLfile);req1.responseType="arraybuffer";
@@ -245,83 +224,301 @@ req1.send();
    p.fcall(code_addr1);
    PLfile=null;
     for(var x=0;x < 0x300000;x += 8){
-	p.write8(code_addr1.add32(x),0);}plLoadedMSG();
+	p.write8(code_addr1.add32(x),0);}
 	};
+	allset();
    setTimeout(runPAYLOAD1,100);
   }
  };
 }
 
-function getScript(source,callback){
-var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);
+for(var i=50; i<=75; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+
+function load_goldhen(){
+msgs.innerHTML = "<h1>Loading Gold HEN... Please Wait</h1>";
+LoadedMSG = "<h1>Gold HEN Loaded</h1>";
+PLfile = "./paylode/goldhen.bin";
+load_payload();
 }
 
-function goYesNo(){
-if(localStorage.ps4trn!="yes"){exploit();}
-else {all.style.display = "block"; showwolf();}
+function load_LinuxLoader1gb(){
+msgs.innerHTML = "<h1>Loading Linux Loader 1GB... Please Wait</h1>"
+LoadedMSG = "<h1>Linux Loader</h1>"
+PLfile = "./paylode/Linux-1gb.bin";
+load_payload();
 }
 
-function goldhenv24b16(){top.PLfile="paylode/goldhenv24b16.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function Hen214l(){top.PLfile="paylode/hen214L.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function Restore(){top.PLfile="paylode/restore.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function Backup(){top.PLfile="paylode/backup.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function AppToUsb(){top.PLfile="paylode/apptousb.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function FTP(){top.PLfile="paylode/ftp.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function LinuxLoader1gb(){top.PLfile="paylode/linux1GB.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function LinuxLoader2gb(){top.PLfile="paylode/linux2GB.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function LinuxLoader3gb(){top.PLfile="paylode/linux3GB.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function LinuxEeply(){top.PLfile="paylode/linuxEeply.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function linuxInternal(){top.PLfile="paylode/linuxInternal.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function LinuxNOedidy(){top.PLfile="paylode/LinuxNOedidy.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function linuxVul(){top.PLfile="paylode/linuxVul.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function binloader(){loadScriptb();anim();}
-function Dumper(){top.PLfile="paylode/dumper.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function ps4debug(){top.PLfile="paylode/ps4debug.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function Itemzflow(){top.PLfile="paylode/Itemzflow.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function todex(){top.PLfile="paylode/todex.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function Toolbox(){top.PLfile="paylode/toolbox.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function KernelClock(){top.PLfile="paylode/kernelclock.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function UpdatesDisable(){top.PLfile="paylode/disableupdates.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function UpdatesEnable(){top.PLfile="paylode/enableupdates.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function load_RestoreDB(){top.PLfile="paylode/CopyCH.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function load_pkgbackup(){top.PLfile="paylode/pkgbackup.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function WebRTE(){top.PLfile="paylode/webrte.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function Beefqueefmod147(){top.PLfile="paylode/beefqueef147.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function WildeModz147(){top.PLfile="paylode/WildeModz147.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaArabicGuy100(){top.PLfile="paylode/gtaArabicGuy100.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaArabicGuy127(){top.PLfile="paylode/gtaArabicGuy127.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaArabicGuy132(){top.PLfile="paylode/gtaArabicGuy132.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaArabicGuy133(){top.PLfile="paylode/gtaArabicGuy133.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtabeefqueef138(){top.PLfile="paylode/beefqueef138.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtawildemodz138(){top.PLfile="paylode/gtawildemodz138.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaDope127(){top.PLfile="paylode/gtaDope127.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaIntense(){top.PLfile="paylode/gtaIntense.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaIntense127(){top.PLfile="paylode/gtaIntense127.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaLamance(){top.PLfile="paylode/gtaLamance.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaLamance138(){top.PLfile="paylode/gtaLamance138.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaLotus127(){top.PLfile="paylode/gtaLotus127.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaLTS127(){top.PLfile="paylode/gtaLTS127.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaNotAnother(){top.PLfile="paylode/gtaNotAnother.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaNotAnother127(){top.PLfile="paylode/gtaNotAnother127.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaPsych0s(){top.PLfile="paylode/gtaPsych0s.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaTrainer(){top.PLfile="paylode/gtaTrainer.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaWildeModZ(){top.PLfile="paylode/gtaWildeModZ.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function gtaWildeModz127(){top.PLfile="paylode/gtaWildeModz127.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function red100(){top.PLfile="paylode/oystersmenu100.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function red113(){top.PLfile="paylode/oystersmenu113.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function red119(){top.PLfile="paylode/oystersmenu119.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function red124(){top.PLfile="paylode/oystersmenu124.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function red129(){top.PLfile="paylode/oystersmenu129.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function FAN50(){top.PLfile="paylode/fan50.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function FAN55(){top.PLfile="paylode/fan55.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function FAN60(){top.PLfile="paylode/fan60.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function FAN65(){top.PLfile="paylode/fan65.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function FAN70(){top.PLfile="paylode/fan70.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function FAN75(){top.PLfile="paylode/fan75.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function Defaul(){top.PLfile="paylode/fan80.bin";top.PLdone="Paylode Loaded";top.PayloadLoader();}
-function showwolf(){localStorage.ps4trn="yes";location.reload();}
-</script>	
-</body>
-</html> 
+function load_LinuxLoader2gb(){
+msgs.innerHTML = "<h1>Loading Linux Loader 2GB... Please Wait</h1>"
+LoadedMSG = "<h1>Linux Loader 2GB </h1>"
+PLfile = "./paylode/Linux-2gb.bin";
+load_payload();
+}
+
+function load_LinuxLoader3gb(){
+msgs.innerHTML = "<h1>Loading Linux Loader 3GB... Please Wait</h1>"
+LoadedMSG = "<h1>Linux Loader 3GB</h1>"
+PLfile = "./paylode/Linux-3gb.bin";
+load_payload();
+}
+
+function load_LinuxLoader4gb(){
+msgs.innerHTML = "<h1>Loading Linux Loader 4GB... Please Wait</h1>"
+LoadedMSG = "<h1>Linux Loader 5GB </h1>"
+PLfile = "./paylode/Linux-2gb.bin";
+load_payload();
+}
+
+function load_LinuxLoader5gb(){
+msgs.innerHTML = "<h1>Loading Linux Loader 5GB... Please Wait</h1>"
+LoadedMSG = "<h1>Linux Loader 5GB</h1>"
+PLfile = "./paylode/Linux-3gb.bin";
+load_payload();
+}
+
+function load_Dumper(){
+msgs.innerHTML = "<h1>Loading App-Dumper... Please Wait</h1>";
+LoadedMSG = "<h1>App-Dumper Loaded</h1>";
+PLfile = "./paylode/dumper.bin";
+load_payload();
+}
+
+function load_AppToUsb(){
+msgs.innerHTML = "<h1>Loading App2USB... Please Wait</h1>"
+LoadedMSG = "<h1>App2USB Loaded</h1>"
+PLfile = "./paylode/apptousb.bin";
+load_payload();
+}
+
+function load_FTP(){
+msgs.innerHTML = "<h1>Loading FTP... Please Wait</h1>"
+LoadedMSG = "<h1>FTP Loaded</h1>";
+PLfile = "./paylode/ftp.bin";
+load_payload();
+}
+
+function load_binloader(){
+msgs.innerHTML = "<h1>Waiting for Payload... Send it using the PS4 IP and port 9020</h1>";
+}
+
+function load_ps4debug(){
+msgs.innerHTML = "<h1>Loading PS4 Debug... Please Wait</h1>"
+LoadedMSG = "<h1>PS4 Debug Loaded</h1>"
+PLfile = "./paylode/ps4debug.bin";
+load_payload();
+}
+
+function load_pkgbackup(){
+msgs.innerHTML = "<h1>Loading PS4 pkg backup... Please Wait</h1>"
+LoadedMSG = "<h1>PS4 pkg backup Loaded</h1>"
+PLfile = "./paylode/pkgbackup.bin";
+load_payload();
+}
+
+function load_Restore(){
+msgs.innerHTML = "<h1>Loading DB Restore... Please Wait</h1>"
+LoadedMSG = "<h1>DB Restore Loaded</h1>"
+PLfile = "./paylode/restore.bin";
+load_payload();
+}
+
+function load_Backup(){
+msgs.innerHTML = "<h1>Loading DB Backup... Please Wait</h1>"
+LoadedMSG = "<h1>DB Backup Loaded</h1>"
+PLfile = "./paylode/backup.bin";
+load_payload();
+}
+
+function load_todex(){
+msgs.innerHTML = "<h1>Loading todex... Please Wait</h1>"
+LoadedMSG = "<h1>todex Loaded</h1>"
+PLfile = "./paylode/todex.bin";
+load_payload();
+}
+
+function load_Toolbox(){
+msgs.innerHTML = "<h1>Loading Toolbox ... Please Wait</h1>"
+LoadedMSG = "<h1>Toolbox Loaded</h1>"
+PLfile = "./paylode/toolbox.bin";
+load_payload();
+}
+
+function load_fanthreshold(){
+msgs.innerHTML = "<h1>Loading Fan Threshold... Please Wait</h1>"
+LoadedMSG = "<h1>Fan Threshold Loaded</h1>";
+PLfile = "./paylode/fan-threshold"+tempC.value+".bin";
+load_payload();
+}
+
+function load_KernelClock(){
+msgs.innerHTML = "<h1>Loading Kernel Clock... Please Wait</h1>"
+LoadedMSG = "<h1>Kernel Clock Loaded</h1>"
+PLfile = "./paylode/kernelclock.bin";
+load_payload();
+}
+
+function load_enablebUpdates(){
+msgs.innerHTML = "<h1>Loading Enable Updates... Please Wait</h1>"
+LoadedMSG = "<h1>Enable Updates Loaded</h1>"
+PLfile = "./paylode/enableupdates.bin";
+load_payload();
+}
+
+function load_disableUpdates(){
+msgs.innerHTML = "<h1>Loading Disable Updates... Please Wait</h1>"
+LoadedMSG = "<h1>Disable Updates Loaded</h1>"
+PLfile = "./paylode/disableupdates.bin";
+load_payload();
+}
+
+function load_webrte(){
+msgs.innerHTML = "<h1>Loading WebRTE... Please Wait</h1>"
+LoadedMSG = "<h1>WebRTE Loaded</h1>"
+PLfile = "./paylode/webrte.bin";
+load_payload();
+}
+
+function load_RestoreDB(){
+msgs.innerHTML = "<h1>Loading RestoreDB... Please Wait</h1>"
+LoadedMSG = "<h1>RestoreDB Loaded</h1>"
+PLfile = "./paylode/CopyCH.bin";
+load_payload();
+}
+
+function load_gtaArabicGuy100(){
+msgs.innerHTML = "<h1>Loading Arabic Guy v1.00... Please Wait</h1>";
+LoadedMSG = "<h1>Arabic Guy v1.00 Loaded</h1>"
+PLfile = "./paylode/gtaArabicGuy100.bin";
+load_payload();
+}
+
+function load_gtaArabicGuy127(){
+msgs.innerHTML = "<h1>Loading Arabic Guy v1.27... Please Wait</h1>";
+LoadedMSG = "<h1>Arabic Guy v1.27 Loaded</h1>"
+PLfile = "./paylode/gtaArabicGuy127.bin";
+load_payload();
+}
+
+function load_gtaArabicGuy132(){
+msgs.innerHTML = "<h1>Loading Arabic Guy v1.32... Please Wait</h1>";
+LoadedMSG = "<h1>Arabic Guy v1.32 Loaded</h1>"
+PLfile = "./paylode/gtaArabicGuy132.bin";
+load_payload();
+}
+
+function load_gtaArabicGuy133(){
+msgs.innerHTML = "<h1>Loading Arabic Guy v1.33... Please Wait</h1>";
+LoadedMSG = "<h1>Arabic Guy v1.33 Loaded</h1>"
+PLfile = "./paylode/gtaArabicGuy133.bin";
+load_payload();
+}
+
+function load_gtaLamance138(){
+msgs.innerHTML = "<h1>Loading Lamance 1.38... Please Wait</h1>";
+LoadedMSG = "<h1>Lamance 1.38 Loaded</h1>"
+PLfile = "./paylode/Lamance138.bin";
+load_payload();
+}
+
+function load_Beefqueef138(){
+msgs.innerHTML = "<h1>Loading Beefqueef 1.38... Please Wait</h1>";
+LoadedMSG = "<h1>Beefqueef 1.38 Loaded</h1>"
+PLfile = "./paylode/beefqueef138.bin";
+load_payload();
+}
+
+function load_Beefqueef147(){
+msgs.innerHTML = "<h1>Loading Beefqueef 1.47... Please Wait</h1>";
+LoadedMSG = "<h1>Beefqueef 1.47 Loaded</h1>"
+PLfile = "./paylode/beefqueef147.bin";
+load_payload();
+}
+
+function load_Beefqueef148(){
+msgs.innerHTML = "<h1>Loading Beefqueef 1.48... Please Wait</h1>";
+LoadedMSG = "<h1>Beefqueef 1.48 Loaded</h1>"
+PLfile = "./paylode/beefqueef148.bin";
+load_payload();
+}
+
+function load_WildeModz127(){
+msgs.innerHTML = "<h1>Loading WildeModz 1.27... Please Wait</h1>";
+LoadedMSG = "<h1>WildeModz 1.27 Loaded</h1>"
+PLfile = "./paylode/WildeModz127.bin";
+load_payload();
+}
+
+function load_WildeModz132(){
+msgs.innerHTML = "<h1>Loading WildeModz 1.32... Please Wait</h1>";
+LoadedMSG = "<h1>WildeModz 1.32 Loaded</h1>"
+PLfile = "./paylode/WildeModz132.bin";
+load_payload();
+}
+
+function load_WildeModz133(){
+msgs.innerHTML = "<h1>Loading Wilde Modz 1.33... Please Wait</h1>";
+LoadedMSG = "<h1>Wilde Modz 1.33 Loaded</h1>"
+PLfile = "./paylode/WildeModz133.bin";
+load_payload();
+}
+
+function load_WildeModz138(){
+msgs.innerHTML = "<h1>Loading Wilde Modz 1.38... Please Wait</h1>";
+LoadedMSG = "<h1>Wilde Modz 1.38 Loaded</h1>"
+PLfile = "./paylode/WildeModz138.bin";
+load_payload();
+}
+
+function load_WildeModz147(){
+msgs.innerHTML = "<h1>Loading Wilde Modz 1.47... Please Wait</h1>";
+LoadedMSG = "<h1>Wilde Modz 1.47 Loaded</h1>"
+PLfile = "./paylode/WildeModz147.bin";
+load_payload();
+}
+
+function load_red100(){
+msgs.innerHTML = "<h1>Loading Oysters Menu v1.00... Please Wait</h1>";
+LoadedMSG = "<h1>Oysters Menu v1.00 Loaded</h1>"
+PLfile = "./paylode/oystersmenu100.bin";
+load_payload();
+}
+
+function load_red113(){
+msgs.innerHTML = "<h1>Loading Oysters Menu v1.13... Please Wait</h1>";
+LoadedMSG = "<h1>Oysters Menu v1.13 Loaded</h1>"
+PLfile = "./paylode/oystersmenu113.bin";
+load_payload();
+}
+
+function load_red119(){
+msgs.innerHTML = "<h1>Loading Oysters Menu v1.19... Please Wait</h1>";
+LoadedMSG = "<h1>Oysters Menu v1.19 Loaded</h1>"
+PLfile = "./paylode/oystersmenu119.bin";
+load_payload();
+}
+
+function load_red124(){
+msgs.innerHTML = "<h1>Loading Oysters Menu v1.24... Please Wait</h1>";
+LoadedMSG = "<h1>Oysters Menu v1.24 Loaded</h1>"
+PLfile = "./paylode/oystersmenu124.bin";
+load_payload();
+}
+
+function load_red129(){
+msgs.innerHTML = "<h1>Loading Oysters Menu v1.29... Please Wait</h1>";
+LoadedMSG = "<h1>Oysters Menu v1.29 Loaded</h1>"
+PLfile = "./paylode/oystersmenu129.bin";
+load_payload();
+}
+
+</script>
 </body>
 </html>
+

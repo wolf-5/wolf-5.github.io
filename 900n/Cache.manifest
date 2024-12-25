@@ -1,22 +1,12 @@
 CACHE MANIFEST 
-# The Wolf Host 900n ( Fri 02/02/2024 )
 
-alert.mjs
+CACHE: 
 cache.html
-config.mjs
-exploit.mjs
+exploit.js
 index.html
 int64.js
-kexploit.js
 rop.js
-module\chain.mjs
-module\constants.mjs
-module\int64.mjs
-module\mem.mjs
-module\memtools.mjs
-module\offset.mjs
-module\rw.mjs
-module\utils.mjs
+webkit_psfree.js
 img\AppToUsb.png
 img\binloader.png
 img\CopyCH.png
@@ -46,6 +36,12 @@ img\updat.png
 img\urtrainer.png
 img\Web-Activator.png
 img\WebRTE.png
+module\constants.js
+module\int64.js
+module\mem.js
+module\memtools.js
+module\rw.js
+module\utils.js
 paylode\app2usb.bin.bz2
 paylode\arabicguy100.bin.bz2
 paylode\arabicguy127.bin.bz2
@@ -64,7 +60,7 @@ paylode\fan65.bin.bz2
 paylode\fan70.bin.bz2
 paylode\fan75.bin.bz2
 paylode\fan80.bin.bz2
-paylode\goldhenv24b16.bin
+paylode\goldhen.bin
 paylode\historyblocker.bin.bz2
 paylode\kerneldumper.bin.bz2
 paylode\Lamance.bin.bz2
@@ -91,3 +87,7 @@ paylode\webrte.bin.bz2
 paylode\WildeModz132.bin.bz2
 paylode\WildeModz138.bin.bz2
 paylode\WildeModz148.bin.bz2
+
+NETWORK: 
+*
+( Fri 05/10/2024 )
