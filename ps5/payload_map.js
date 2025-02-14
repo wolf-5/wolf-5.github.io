@@ -51,6 +51,16 @@ const payload_map = [
         supportedFirmwares: ["1.00", "1.01", "1.02", "1.05", "1.12", "1.14", "2.00", "2.20", "2.25", "2.26", "2.30", "2.50", "2.70"],
         toPort: 9021
     },
+	{
+        displayTitle: "تفعيل ريموت بلاي",
+        description: "تفعيل ريموت بلاي على أجهزة بلاي ستيشن 5 التي تعمل بنظام جيلبريك.",
+        fileName: "rp-get-pin.elf",
+        ////author: "idlesauce",
+        projectSource: "https://github.com/idlesauce/ps5-remoteplay-get-pin",
+        binarySource: "https://github.com/idlesauce/ps5-remoteplay-get-pin/releases/tag/v0.1",
+        ////version: "0.1",
+        toPort: 9021
+    },
     {
         displayTitle: "libhijacker game-patch",
         description: "تصحيح الألعاب المدعومة لتعمل بمعدلات إطارات أعلى، وإضافة قوائم تصحيح الأخطاء إلى بعض الألعاب.",
@@ -140,16 +150,6 @@ const payload_map = [
         binarySource: "https://github.com/SiSTR0/ps5-versions/releases/download/v1.0/ps5-versions.elf",
         ////version: "1.0",
         supportedFirmwares: ["1.", "2.", "3.", "4."]
-    },
-    {
-        displayTitle: "تفعيل ريموت بلاي",
-        description: "تفعيل ريموت بلاي على أجهزة بلاي ستيشن 5 التي تعمل بنظام جيلبريك.",
-        fileName: "rp-get-pin.elf",
-        ////author: "idlesauce",
-        projectSource: "https://github.com/idlesauce/ps5-remoteplay-get-pin",
-        binarySource: "https://github.com/idlesauce/ps5-remoteplay-get-pin/releases/tag/v0.1",
-        ////version: "0.1",
-        toPort: 9021
     },
     {
         // https://github.com/Storm21CH/PS5_Browser_appCache_remove
