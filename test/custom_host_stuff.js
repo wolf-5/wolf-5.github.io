@@ -1,50 +1,67 @@
 async function runJailbreak() {
-    // Hide jailbreak button and show console
+    let postjb = document.getElementById("post-jb-view");
+    postjb.style.opacity = "0";
+    postjb.style.pointerEvents = "none";
     document.getElementById("run-jb-parent").style.opacity = "0";
-    document.getElementById("console-parent").style.opacity = "1";
+    await sleep(500);
+    document.getElementById("run-jb-parent").style.display = "none";
+    document.getElementById("jb-progress").style.opacity = "1";
+    await sleep(500);
 
- // Mostrar el mensaje "★ Activating Xploit ..."
-    let consoleElement = document.getElementById("console");
-    consoleElement.innerHTML = "★ Activating Xploit ...";
-
-    // Esperar 5 segundos y luego borrar el contenido
-    setTimeout(function() {
-        consoleElement.innerHTML = ""; // Borra el mensaje
-    }, 5000); // 5 segundos de espera
-
-   setTimeout(async () => {
-    let wk_exploit_type = localStorage.getItem("wk_exploit_type");
-    if (wk_exploit_type == "psfree") {
-        debug_log("[ PSFree - Step 1]");
-        await run_psfree();  // Ejecuta PSFree después de 2 segundos
-    } else if (wk_exploit_type == "fontface") {
-        await run_fontface();
-    }
-}, 2000); // Espera 2 segundos antes de iniciar el PSFree
+    setTimeout(() => {
+        poc();
+    }, 100);
 }
 
-// Ejecuta automáticamente el Jailbreak al cargar la página
-window.onload = async function() {
-    await runJailbreak();
-};
+async function switch_to_post_jb_view() {
+    // should already be none but just in case
+    document.getElementById("run-jb-parent").style.display = "none";
 
-function onload_setup() {
-    if (document.documentElement.hasAttribute("manifest")) {
-        add_cache_event_toasts();
-    }
+    document.getElementById("jb-progress").style.opacity = "0";
+    await sleep(1000);
+    document.getElementById("jb-progress").style.display = "none";
 
-    document.documentElement.style.overflowX = 'hidden';
+    document.getElementById("post-jb-view").style.opacity = "0";
+    document.getElementById("post-jb-view").classList.add("opacity-transition");
+    document.getElementById("post-jb-view").style.display = "flex";
+    document.getElementById("post-jb-view").style.opacity = "1";
 
-    if (localStorage.getItem("wk_exploit_type") == null) {
-        localStorage.setItem("wk_exploit_type", "psfree");
-    }
+    document.getElementById("credits").style.opacity = "0";
+    document.getElementById("credits").style.display = "none";
+
 }
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function showToast(message, timeout = 2000) {
+// unused, the code needs to be in the main exploit function
+function create_payload_buttons() {
+    for (let i = 0; i < payload_map.length && i < 20; i++) {
+        let btn = document.getElementById("payload-" + i);
+        btn.onclick = async () => {
+            try {
+                await load_local_elf(payload_map[i].fileName);
+            }
+            catch (err) {
+                await alert(err);
+            }
+        };
+
+        let btn_child = btn.children[0];
+        btn_child.innerHTML = payload_map[i].displayTitle;
+
+        let btn_child2 = btn.children[1];
+        btn_child2.innerHTML = payload_map[i].description;
+
+        btn.style.visibility = "visible";
+        btn.style.maxHeight = 'unset';
+        btn.classList.remove("hidden-btn");
+    }
+
+}
+
+function showToast(message, duration = 2000) { // 2000 es el valor predeterminado
     const toastContainer = document.getElementById('toast-container');
     const toast = document.createElement('div');
     toast.className = 'toast';
@@ -62,5 +79,6 @@ function showToast(message, timeout = 2000) {
         toast.addEventListener('transitionend', () => {
             toast.remove();
         });
-    }, timeout);
+    }, duration); // Duración ajustable
 }
+

@@ -7,8 +7,6 @@ const OFFSET_lk_pthread_create_name_np   = 0x0002CED0;
 const OFFSET_lk_pthread_join             = 0x0002F460;
 const OFFSET_lk_pthread_exit             = 0x00020A80;
 const OFFSET_lk__thread_list             = 0x000601A8;
-const OFFSET_lk_sleep                    = 0x00023340;
-const OFFSET_lk_sceKernelGetCurrentCpu   = 0x00002C10;
 
 const OFFSET_lc_memset                   = 0x00014B50;
 const OFFSET_lc_setjmp                   = 0x0005F940;
@@ -27,21 +25,21 @@ let wk_gadgetmap = {
     "pop rax": 0x0002C827,
     "pop rsp": 0x00099A22,
 
-    "mov [rdi], rsi": 0x00A2D658,
+    "mov [rdi], rsi": 0x00A2D5B8, //check
     "mov [rdi], rax": 0x0003A79A,
     "mov [rdi], eax": 0x0003A79B,
 
     "infloop": 0x00007351,
 
     //branching specific gadgets
-    "cmp [rcx], eax" : 0x00E4EF7B,
+    "cmp [rcx], eax" : 0x00E4EEDB, //check
     "sete al"        : 0x00022549,
     "seta al"        : 0x0000C94F,
     "setb al"        : 0x0015E348,
     "setg al"        : 0x002F89AA,
     "setl al"        : 0x000E0D91,
-    "shl rax, 3"     : 0x01A269F3,
-    "add rax, rcx"   : 0x000B0E59,
+    "shl rax, 3"     : 0x01A26823, //check
+    "add rax, rdx"   : 0x016D53B2, //check
     "mov rax, [rax]" : 0x00047FEC,
     "inc dword [rax]": 0x004971AA,
 };
@@ -375,17 +373,16 @@ let syscall_map = {
     0x2D2: 0x32750, // sys_workspace_ctrl
 };
 
-// Kernel stack offsets
-const OFFSET_KERNEL_STACK_COOKIE                = 0x00000930;
-const OFFSET_KERNEL_STACK_SYS_SCHED_YIELD_RET   = 0x00000808;
-
-// Kernel text-relative offsets
-const OFFSET_KERNEL_DATA                        = 0x00BD0000;
-const OFFSET_KERNEL_SYS_SCHED_YIELD_RET         = 0x00559E22;
-const OFFSET_KERNEL_ALLPROC                     = 0x0333DC58;
-const OFFSET_KERNEL_SECURITY_FLAGS              = 0x07036474;
-const OFFSET_KERNEL_TARGETID                    = 0x0703647D;
-const OFFSET_KERNEL_QA_FLAGS                    = 0x07036498;
-const OFFSET_KERNEL_UTOKEN_FLAGS                = 0x07036500;
-const OFFSET_KERNEL_PRISON0                     = 0x02892670;
-const OFFSET_KERNEL_ROOTVNODE                   = 0x0737B4C0;
+const OFFSET_KERNEL_DATA_KQUEUE_LOW_WORD    = 0x7062; 
+const OFFSET_KERNEL_DATA_KQUEUE_BASE_SLIDE  = 0x317062; 
+const OFFSET_KERNEL_TEXT_KQUEUE_BASE_SLIDE  = 0xEE7062;
+const OFFSET_KERNEL_DATA_BASE_ALLPROC       = 0x276DC58;
+const OFFSET_KERNEL_DATA_BASE_PS4SDK        = 0x1639898;
+const OFFSET_KERNEL_DATA_BASE_PS5SDK_       = 0x16398F8;
+const OFFSET_KERNEL_DATA_BASE_PS5SDK 		= 0x6466598;
+const OFFSET_KERNEL_DATA_BASE_SECURITYFLAGS = 0x6466474;
+const OFFSET_KERNEL_DATA_BASE_TARGETID      = 0x646647D;
+const OFFSET_KERNEL_DATA_BASE_QA_FLAGS      = 0x6466498;
+const OFFSET_KERNEL_DATA_BASE_UTOKEN_FLAGS  = 0x6466500;
+const OFFSET_KERNEL_DATA_BASE_PRISON0       = 0x1CC2670;
+const OFFSET_KERNEL_DATA_BASE_ROOTVNODE     = 0x67AB4C0;

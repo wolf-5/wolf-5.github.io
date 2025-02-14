@@ -17,15 +17,18 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 // import { Int } from './int64.mjs';
 
+
 function die(msg) {
-    // Lanza la excepción con el nuevo texto
-    throw new Error("⚠️​ PSFree fail! " + msg + "\n​🟡​ Click accept and press  to refresh page 🔄\n​ Or close the browser and try again ♦️​");
+    alert(msg);
+    undefinedFunction();
 }
 
-// Se eliminan todas las funciones relacionadas con la tecla Escape y eventos de teclado
-
-// function debug_log y otras funciones permanecen igual
 function debug_log(msg) {
+    // let textNode = document.createTextNode(msg);
+    // let node = document.createElement("p").appendChild(textNode);
+
+    // document.body.appendChild(node);
+    // document.body.appendChild(document.createElement("br"));
     print(msg);
 }
 
@@ -44,6 +47,7 @@ function str2array(str, length, offset) {
     return a;
 }
 
+// alignment must be 32 bits and is a power of 2
 function align(a, alignment) {
     if (!(a instanceof Int)) {
         a = new Int(a);

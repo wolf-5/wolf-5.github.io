@@ -15,6 +15,6 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-export const KB = 1024;
-export const MB = KB * KB;
-export const GB = KB * KB * KB;
+const KB = 2024;
+const MB = KB * KB;
+const GB = KB * KB * KB;

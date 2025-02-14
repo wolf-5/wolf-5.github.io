@@ -7,8 +7,6 @@ const OFFSET_lk_pthread_create_name_np   = 0x00001B60;
 const OFFSET_lk_pthread_join             = 0x0002FAD0;
 const OFFSET_lk_pthread_exit             = 0x00020A80;
 const OFFSET_lk__thread_list             = 0x000601A8;
-const OFFSET_lk_sleep                    = 0x000237E0;
-const OFFSET_lk_sceKernelGetCurrentCpu   = 0x00002D10;
 
 const OFFSET_lc_memset                   = 0x000148F0;
 const OFFSET_lc_setjmp                   = 0x0005E9B0;
@@ -41,7 +39,7 @@ let wk_gadgetmap = {
     "setg al"        : 0x000708c9,
     "setl al"        : 0x01517692,
     "shl rax, 3"     : 0x01A43F03,
-    "add rax, rcx"   : 0x0008F9FD,
+    "add rax, rdx"   : 0x016F4948,
     "mov rax, [rax]" : 0x0142E309,
     "inc dword [rax]": 0x017629AF,
 };
@@ -375,17 +373,16 @@ let syscall_map = {
     0x2D2: 0x32E00, // sys_workspace_ctrl
 };
 
-// Kernel stack offsets
-const OFFSET_KERNEL_STACK_COOKIE                = 0x00000930;
-const OFFSET_KERNEL_STACK_SYS_SCHED_YIELD_RET   = 0x00000808;
-
-// Kernel text-relative offsets
-const OFFSET_KERNEL_DATA                        = 0x00C00000;
-const OFFSET_KERNEL_SYS_SCHED_YIELD_RET         = 0x0057D392;
-const OFFSET_KERNEL_ALLPROC                     = 0x033EDCB8;
-const OFFSET_KERNEL_SECURITY_FLAGS              = 0x07106474;
-const OFFSET_KERNEL_TARGETID                    = 0x0710647D;
-const OFFSET_KERNEL_QA_FLAGS                    = 0x07106498;
-const OFFSET_KERNEL_UTOKEN_FLAGS                = 0x07106500;
-const OFFSET_KERNEL_PRISON0                     = 0x02934D00;
-const OFFSET_KERNEL_ROOTVNODE                   = 0x072E74C0;
+const OFFSET_KERNEL_DATA_KQUEUE_LOW_WORD    = 0x8AB5;
+const OFFSET_KERNEL_DATA_KQUEUE_BASE_SLIDE  = 0x318AB5;
+const OFFSET_KERNEL_TEXT_KQUEUE_BASE_SLIDE  = 0xF18AB5; //check
+const OFFSET_KERNEL_DATA_BASE_ALLPROC       = 0x27EDCB8;
+const OFFSET_KERNEL_DATA_BASE_PS4SDK        = 0x16ABE88;
+const OFFSET_KERNEL_DATA_BASE_PS5SDK_       = 0x16ABEE8;
+const OFFSET_KERNEL_DATA_BASE_PS5SDK        = 0x6506598;
+const OFFSET_KERNEL_DATA_BASE_SECURITYFLAGS = 0x6506474;
+const OFFSET_KERNEL_DATA_BASE_TARGETID      = 0x650647D;
+const OFFSET_KERNEL_DATA_BASE_QA_FLAGS      = 0x6506498;
+const OFFSET_KERNEL_DATA_BASE_UTOKEN_FLAGS  = 0x6506500;
+const OFFSET_KERNEL_DATA_BASE_PRISON0       = 0x1D34D00;
+const OFFSET_KERNEL_DATA_BASE_ROOTVNODE     = 0x66E74C0;
