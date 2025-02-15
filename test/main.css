@@ -268,7 +268,7 @@ body {
 }
 
 .d-none {
-    display: block !important;  /* O alguna propiedad que mantenga el elemento visible */
+    display: none !important;
 }
 
 .opacity-transition {
@@ -277,7 +277,7 @@ body {
 
 .hidden-btn {
     padding: 0;
-   visibility: collapse;
+    visibility: collapse;
 }
 
 .grid-container a p {

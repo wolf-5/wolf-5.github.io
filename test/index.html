@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>🟡 XPLOIT🟡 3.xx - 4.xx      [etaHEN & Payloads] </title>
+    <title>🟡 XPLOIT🟡 3.xx - 4.xx AUTO [etaHEN 2.0b]     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -42,48 +42,6 @@
             onload_setup();
         }, false);
     </script>
- <style>
-
-        a { color: white; text-decoration: none; }
-        .Estilo3 { font-size: 24px; }
-        .Estilo6 { font-size: 12px; font-weight: bold; }
-        .Estilo1 { font-size: 10px; }
-        .Estilo2 { color: #ECD765; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
-        #footer { width: 100%; height: 81px; position: absolute; bottom: 55px; left: 0; }
-        #inferior { color: #FFF; position: absolute; left: -1400px; right: 0px; bottom: -12px; height: 10px; z-index: 0; }
-        .yellow-text { color: yellow; }
-        .loader3 { margin: auto; width: 243px; height: 10px; position: absolute; left: 90px; top: 30px; }
-        .oneline { width: 200px; height: 50px; }
-        .icon,
-.icon svg {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-}
-
-.icon {
-  transform: rotate(-90deg) scale(0);
-}
-
-.animate {
-  animation: psicon 2s cubic-bezier(.75,0,1,1) infinite;
-}
-
-@keyframes psicon {
-  0% {
-    transform: rotate(-90deg) scale(0);
-    animation-timing-function: cubic-bezier(0,0,.25,1);
-  }
-  40%, 60% {
-    transform: rotate(0deg) scale(1);
-  }
-  100% {
-    transform: rotate(90deg) scale(0);
-  }
-}
-
-
-    </style>
 </head>
 
 
@@ -103,9 +61,7 @@
         
  <p id="current-fw" class="text-secondary" style="text-align: center; position: absolute; top: 100;left:70; font-size:28px;">
         </p>
-        <p id="listening-ip" class="text-secondary" style="text-align: center; position: absolute; top: 290;left: 50;color:#FFFF00;"><p id="info" style="text-align: center; position: absolute; top: 350;left: 50;color:#FFFF00; font-size:20px;"></p>
-
-        </p>
+        <p id="listening-ip" class="text-secondary" style="text-align: center; position: absolute; top: 290;right: 50;color:#FFFF00;">
     </div>
 
     <div id="before-jb-view">
@@ -123,7 +79,7 @@
 			// 
 			window.onload = executarJailbreak;
 		</script>
-  
+
         <div id="jb-progress" class="opacity-transition"
             style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none;">
             <div class="lds-ellipsis" style="margin-top: 40px;">
@@ -136,82 +92,124 @@
             <p id="jb-progress-status-text" style="text-align: center; position: absolute; top: 150;left: 70; font-size:28px;">
               <span class="secondary-text"></span></p>
             <textarea id="console" class="log" style="display: none;"></textarea>
-        </div>
+        </div><div id=progress style="font-size:28px;text-align:right;color:#fff;padding-right:90px;right:90px;height:120px;">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="67px" height="67px" viewBox="0 0 67 67" style="enable-background:new 0 0 67 67;" xml:space="preserve">
-        <style type="text/css"> .st0 { fill: #FFFFFF; } .bottopmsg { position: fixed; bottom: 34px; width: 1520px; padding: 5px 0 1px 0; } </style>
-        <symbol id="ps_triangle" viewBox="0 0 67 67">
-            <path class="st0" d="M0.1,62.2L33.4,4.5l33.5,57.7L0.1,62.2z M33.4,18.9L12.5,55h41.8L33.4,18.9z" />
-        </symbol>
-        <symbol id="ps_square" viewBox="0 0 67 67">
-            <path class="st0" d="M62.3,4.5v57.7H4.6V4.5H62.3z M54.8,12H12.1v42.6h42.6V12z" />
-        </symbol>
-        <symbol id="ps_circle" viewBox="0 0 67 67">
-            <path id="ps_circle" class="st0" d="M33.5,3c16.7,0,30.2,13.5,30.2,30.2c0,16.7-13.5,30.2-30.2,30.2S3.2,50,3.2,33.3C3.2,16.6,16.7,3,33.5,3z M55.7,33.3C55.7,21,45.8,11,33.5,11C21.1,11,11.2,21,11.2,33.3c0,12.3,9.9,22.3,22.3,22.3C45.8,55.5,55.7,45.6,55.7,33.3z" />
-        </symbol>
-        <symbol id="ps_cross" viewBox="0 0 67 67">
-            <path class="st0" d="M57,63L33.5,39.5L10,63l-5.3-5.3l23.5-23.5L4.7,10.7L10,5.4l23.5,23.5L57,5.4l5.3,5.3L38.7,34.2l23.5,23.6L57,63z" />
-        </symbol>
-    </svg>
-    <div class="loader3">
-        <div class="icon animate" id="icon1">
-            <svg><use xlink:href="#ps_triangle" id="svg1" class="svg-icon" /></svg>
-        </div>
-        <div class="icon animate" id="icon2">
-            <svg><use xlink:href="#ps_square" id="svg2" class="svg-icon" /></svg>
-        </div>
-        <div class="icon animate" id="icon3">
-            <svg><use xlink:href="#ps_cross" id="svg3" class="svg-icon" /></svg>
-        </div>
-        <div class="icon animate" id="icon4">
-            <svg><use xlink:href="#ps_circle" id="svg4" class="svg-icon" /></svg>
-        </div>
-    </div>
+  <style type="text/css">
+    .st0 { fill: #FFFFFF; } .bottopmsg{ position:fixed;bottom: 34px;width: 1520px;padding:5px 0 1px 0;}
+  </style>
+
+  <symbol id="ps_triangle" viewBox="0 0 67 67">
+    <path class="st0" d="M0.1,62.2L33.4,4.5l33.5,57.7L0.1,62.2z M33.4,18.9L12.5,55h41.8L33.4,18.9z"/>
+  </symbol>
+
+  <symbol id="ps_square" viewBox="0 0 67 67">
+    <path class="st0" d="M62.3,4.5v57.7H4.6V4.5H62.3z M54.8,12H12.1v42.6h42.6V12z"/>
+  </symbol>
+
+  <symbol id="ps_circle" viewBox="0 0 67 67">
+    <path id="ps_circle" class="st0" d="M33.5,3c16.7,0,30.2,13.5,30.2,30.2c0,16.7-13.5,30.2-30.2,30.2S3.2,50,3.2,33.3 C3.2,16.6,16.7,3,33.5,3z M55.7,33.3C55.7,21,45.8,11,33.5,11C21.1,11,11.2,21,11.2,33.3c0,12.3,9.9,22.3,22.3,22.3 C45.8,55.5,55.7,45.6,55.7,33.3z" />
+  </symbol>
+
+  <symbol id="ps_cross" viewBox="0 0 67 67">
+    <path class="st0" d="M57,63L33.5,39.5L10,63l-5.3-5.3l23.5-23.5L4.7,10.7L10,5.4l23.5,23.5L57,5.4l5.3,5.3L38.7,34.2 l23.5,23.6L57,63z"/>
+  </symbol>
+</svg>
+
+<div class="loader3">
+  <div class="icon animate" id="icon1"><svg><use xlink:href="#ps_triangle" id="svg1" class="svg-icon" /></svg></div><!--
+--><div class="icon animate" id="icon2"><svg><use xlink:href="#ps_square" id="svg2" class="svg-icon" /></svg></div><!--
+--><div class="icon animate" id="icon3"><svg><use xlink:href="#ps_cross" id="svg3" class="svg-icon" /></svg></div><!--
+--><div class="icon animate" id="icon4"><svg><use xlink:href="#ps_circle" id="svg4" class="svg-icon" /></svg></div>
+</div></span>
+  
+  
+</div>
+
+    
+    <div id=bottommsg class="bottopmsg"><div class="loader2">
+  <div class="dot2"></div>
+  <div class="dot2"></div>
+  <div class="dot2"></div>
+  <div class="dot2"></div>
+  
+</div><script>// Inspired by the loader on the PS4 which randomises the symbols that appear
+var iconList = ['triangle','square','cross','circle'],
+    icons = document.getElementsByClassName('icon'),
+    ready = 0,
+    i,j;
+
+function changeIcon(icon, iconParent) {
+    var randomIcon = '#ps_' + iconList[Math.floor(Math.random() * iconList.length)],
+        iconNum = parseInt(icon.id.substr(3));
+
+    if (ready < iconNum) { // We make sure every icon is done animating in the right order
+        ready = iconNum;
+    }
+
+    iconParent.classList.remove('animate');
+    icon.setAttribute('xlink:href', randomIcon);
+
+    if (ready === 4) { // If all symbols are changed, start the animation anew
+        setTimeout(function(){
+            for (j = 0 ; j < icons.length ; j++) {
+                icons[j].classList.add('animate');
+            }
+            ready = 0;
+        }, 0);
+    }
+}
+
+for (i = 0 ; i < icons.length ; i++) { // Loop through all the icons
+    icons[i].addEventListener('animationend', function(e) {
+        changeIcon(e.target.querySelector('.svg-icon'), e.target);
+    });
+}
+
+// Toggler, quick and easy
+document.querySelector('button').addEventListener('click', function(){
+  document.querySelector('.loader').classList.toggle('oneline');
+});</script></font></div>
 
 
-<div id=progress style="font-size:28px;text-align:left;color:#fff;padding-left:90px;left:90px;height:120px; margin-top: -165px;">
-
-</font></div>
-
-
-        <div id="payloads"><div id="post-jb-view" class="opacity-transition" style="width: 100%;">
+        <div id="post-jb-view" class="opacity-transition" style="width: 100%;">
          
             <div id="payloads-list" class="grid-container">
-                <a class="btn mx-auto hidden-btn" id="payload-0" tabindex="0" data-info="etaHEN 2.0b by LM" >
+                <a class="btn mx-auto hidden-btn" id="payload-0" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
                 </a>
-                <a class="btn mx-auto hidden-btn" id="payload-1" tabindex="0" data-info="etaHEN 1.8b by LM" >
+                <a class="btn mx-auto hidden-btn" id="payload-1" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
                 </a>
-                <a class="btn mx-auto hidden-btn" id="payload-2" tabindex="0" data-info="Temperature information, frequency" >
+                <a class="btn mx-auto hidden-btn" id="payload-2" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
                 </a>
-                <a class="btn mx-auto hidden-btn" id="payload-3" tabindex="0" data-info="Removes appcache from browser" >
+                <a class="btn mx-auto hidden-btn" id="payload-3" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
                 </a>
-                <a class="btn mx-auto hidden-btn" id="payload-4" tabindex="0" data-info="Shows kernel build, os and sdk version" >
+                <a class="btn mx-auto hidden-btn" id="payload-4" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
                 </a>
-                <a class="btn mx-auto hidden-btn" id="payload-5" tabindex="0" data-info="Fan threshold set 60°" >
+                <a class="btn mx-auto hidden-btn" id="payload-5" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
                 </a>
-                <a class="btn mx-auto hidden-btn" id="payload-6" tabindex="0" data-info="Make a BACKUP from db to usb" >
+                <a class="btn mx-auto hidden-btn" id="payload-6" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
                 </a>
-                <a class="btn mx-auto hidden-btn" id="payload-7" tabindex="0"data-info="Uses port 9021, Persistent network elf loader" >
+                <a class="btn mx-auto hidden-btn" id="payload-7" tabindex="0">
                     <p class="payload-name"></p>
                     <p class="payload-description"></p>
                     <p class="payload-author"></p>
@@ -277,7 +275,7 @@
                     <p class="payload-author"></p>
                 </a>
             </div>
-        </div></div><div style="display: none;">
+        </div><div style="display: none;">
         <div id="menu-overlay"
             style="position: fixed; top: -100%; left: 0; width: 100%; min-height: 100%; height: 100%; background-color: #111111d0; opacity:0;"
             class="opacity-transition"></div>
@@ -295,7 +293,7 @@
             <a style="font-size:20px;" href="https://twitter.com/theflow0" target="_blank">@theflow0</a>, <a style="font-size:20px;" href="https://twitter.com/sleirsgoevy" target="_blank">@sleirsgoevy</a>,&nbsp;<a style="font-size:20px;" href="https://twitter.com/notnotzecoxao" target="_blank">@notzecoxao</a>,&nbsp;<a style="font-size:20px;" href="https://twitter.com/SpecterDev" target="_blank">@SpecterDev</a>,&nbsp;<a style="font-size:20px;">ChendoChap</a>,&nbsp;<a style="font-size:20px;" href="https://twitter.com/Znullptr" target="_blank">@Znullptr</a>&nbsp;,&nbsp;<a style="font-size:20px;" href="https://twitter.com/SocraticBliss" target="_blank">@SocraticBliss</a></p>        
       <div id="inferior"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="54" viewBox="0 0 62 54"><image width="62" height="54" xlink:href="data:image/png;base64,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"/></svg>
           <div id="inferior2" style="position:absolute;right:1320px; bottom:-23px;"><span class="Estilo6" style="padding-bottom:170px;">★ URL Redirection</span></div> </div>
-          <h1 align="center" class="Estilo1"><a style="color:white; margin-left: 15px; font-size:18px;">Thanks to All the developers who contributed to the PS4-PS5 Scene ...</a><a href="https://twitter.com/m0ur0ne" target="_blank" style="font-size:18px;">Website By: Mouuu <span class="Estilo3">㋡</span></a></h1>
+          <h1 align="center" class="Estilo1"><a style="color:white; margin-left: 15px; font-size:18px;">Thanks to All the developers who contributed to the PS4-PS5 Scene ...</a><a href="https://twitter.com/mour0ne" target="_blank" style="font-size:18px;">Website By: Mouuu <span class="Estilo3">㋡</span></a></h1>
             <p><span class="Estilo2">for system version 3.00, 3.20, 4.00, 4.02, 4.03, 4.50, 4.51</span>  
     </p></div>
 <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 24px" class="info opacity-transition"
