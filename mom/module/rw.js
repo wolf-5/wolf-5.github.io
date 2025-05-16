@@ -15,7 +15,7 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-import { Int, lohi_from_one } from './int64.mjs';
+import { Int, lohi_from_one } from './int64.js';
 
 // DataView's accessors are constant time and are faster when doing multi-byte
 // accesses but the single-byte accessors are slightly slower compared to just
