@@ -58,5 +58,5 @@ export const MB = KB * KB;
 export const GB = KB * KB * KB;
 export const page_size = 16 * KB; // page size on the ps4
 
-// size of the buffer used by setcontext/getcontext (see module/chain.js)
+// size of the buffer used by setcontext/getcontext (see module/chain.mjs)
 export const context_size = 0xc8;

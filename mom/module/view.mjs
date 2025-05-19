@@ -15,12 +15,12 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-import { Int, lohi_from_one } from './int64.js';
-import { Addr } from './mem.js';
-import { BufferView } from './rw.js';
+import { Int, lohi_from_one } from './int64.mjs';
+import { Addr } from './mem.mjs';
+import { BufferView } from './rw.mjs';
 
-import * as config from '../config.js';
-import * as mt from './memtools.js';
+import * as config from '../config.mjs';
+import * as mt from './memtools.mjs';
 
 // View constructors will always get the buffer property in order to make sure
 // that the JSArrayBufferView is a WastefulTypedArray. m_vector may change if
@@ -153,7 +153,7 @@ const VariableMixin = superclass => class extends superclass {
 
 export class Byte extends VariableMixin(View1) {}
 export class Short extends VariableMixin(View2) {}
-// Int was already taken by int64.js
+// Int was already taken by int64.mjs
 export class Word extends VariableMixin(View4) {}
 
 export class LongArray {

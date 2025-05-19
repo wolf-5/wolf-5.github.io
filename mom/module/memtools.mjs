@@ -17,13 +17,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 // This module are for utilities that depend on running the exploit first
 
-import { Int } from './int64.js';
-import { mem } from './mem.js';
-import { align } from './utils.js';
-import { page_size } from './offset.js';
-import { BufferView } from './rw.js';
-import { View1 } from './view.js';
-import * as off from './offset.js';
+import { Int } from './int64.mjs';
+import { mem } from './mem.mjs';
+import { align } from './utils.mjs';
+import { page_size } from './offset.mjs';
+import { BufferView } from './rw.mjs';
+import { View1 } from './view.mjs';
+import * as off from './offset.mjs';
 
 // creates an ArrayBuffer whose contents is copied from addr
 export function make_buffer(addr, size) {
@@ -252,4 +252,4 @@ export function cstr(str) {
 // we are re-exporting this since users that want to use cstr() usually want
 // jstr() as well. they are likely working with functions that take/return
 // strings
-export { jstr } from './utils.js';
+export { jstr } from './utils.mjs';

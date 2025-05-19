@@ -33,10 +33,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 //   * Helped in figuring out the size of JSC::ArrayBufferContents and its
 //     needed offsets on different firmwares (PS5).
 
-import { Int } from './module/int64.js';
-import { Memory } from './module/mem.js';
-import { KB, MB } from './module/offset.js';
-import { BufferView } from './module/rw.js';
+import { Int } from './module/int64.mjs';
+import { Memory } from './module/mem.mjs';
+import { KB, MB } from './module/offset.mjs';
+import { BufferView } from './module/rw.mjs';
 
 import {
     die,
@@ -46,10 +46,10 @@ import {
     sleep,
     hex,
     align,
-} from './module/utils.js';
+} from './module/utils.mjs';
 
-import * as config from './config.js';
-import * as off from './module/offset.js';
+import * as config from './config.mjs';
+import * as off from './module/offset.mjs';
 
 // check if we are running on a supported firmware version
 const [is_ps4, version] = (() => {
@@ -857,6 +857,6 @@ async function main() {
 
     clear_log();
     // path to your script that will use the exploit
-    import('./lapse.js');
+    import('./lapse.mjs');
 }
 main();
