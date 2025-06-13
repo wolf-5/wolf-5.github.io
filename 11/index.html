@@ -1,59 +1,41 @@
+
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<title>The Wolf Host Auto Exploit</title>
-<style>
-html, body {
-background-image: url("img.jpg");
-background-size: 100%;
-background-repeat: no-repeat;
-background-color: #24272b;
-color: white;
-text-align: center;
-margin: 0px;
-overflow: hidden;
-}
-
-h1 {
-text-shadow: 0.1em 0.1em 0.2em black;
-font-size: 25px;
-text-align: center;
-color: white;
-}
-
-.TextCaption{
-display: block;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-a img {
-    display: inline-block;  text-decoration: none;
-}
-a {
-    display: inline-block;  text-decoration: none;
-}
-
-a:hover {
-  animation: shake 0.5s infinite;
-}
-@keyframes shake {
-  0% { transform: translateX(0); }
-  20% { transform: translateX(-5px); }
-  40% { transform: translateX(5px); }
-  60% { transform: translateX(-5px); }
-  80% { transform: translateX(5px); }
-  100% { transform: translateX(0); }
-}
-</style>
+<html manifest="cache.manifest">
+<head>
+<title>PS4 9.00 FW GoldHEN Host by GamerHack</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- الكاش تم تعطيله تمامًا -->
 <script>
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));setTimeout(function(){window.progress.innerHTML="Installing Offline Cache: " + Percent + "%";},500)}
-function DisplayCacheProgress(){setTimeout(function(){window.progress.innerHTML="Cache Installed Successfully... Redirecting To The Main Page!";},1500);setTimeout(function(){window.location.href="main.html";},3500);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+    // إلغاء أي تحميل للكاش أو عرض تقدم التثبيت
+    // يمكن الإبقاء على الرسائل أو استبدالها بشيء آخر إن لزم الأمر
+    function DLProgress(e) {
+        // لم نعد نستخدم التطبيق المخزن، فلا حاجة لتتبع التقدم
+    }
+
+    function DisplayCacheProgress() {
+        // يمكنك عرض رسالة أخرى أو تركها فارغة
+        setTimeout(function () {
+            window.msgs.innerHTML = "Skipping Cache... Redirecting To The Main Page!";
+        }, 1500);
+        setTimeout(function () {
+            window.location.href = "main.html";
+        }, 3500);
+    }
+
+    // إلغاء أي استخدام لـ applicationCache
+    // window.applicationCache.removeEventListener("progress", DLProgress);
+    // window.applicationCache.oncached = null;
+    // window.applicationCache.onupdateready = null;
+
+    // بدلاً من ذلك، يمكنك مباشرة التوجيه إلى الصفحة بعد فترة قصيرة
+    DisplayCacheProgress();
 </script>
-<br><br><br>
-<h1 id="progress" style='font-size:35px;text-align:center;'>Jailbreaking <font color=#fc0404> ( Please wait )
-<a  style="margin-top: 190px;">
-<h1 style="margin-top: 430px; color: red;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:white; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:white; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:white; margin-left: 15px;">@Znullptr</a><a style="color:white; margin-left: 15px;">All developers who contributed to the ps4 scene ...</a></h1>
-</div>
+<h1>PS4 9.00 FW GoldHEN Host by GamerHack</h1>
+<hr>
+<br>
+<h1 id="msgs" style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">Wait a Moment...</h1>
+<h1 style="margin-top: 43px;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@sleirsgoevy</a>ChendoChap<a href="https://twitter.com/Znullptr" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Znullptr</a>SiSTR0<a href="https://x.com/Kameleonre_" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Kameleonre_</a>Abc</h1>
+</body>
 </html>

