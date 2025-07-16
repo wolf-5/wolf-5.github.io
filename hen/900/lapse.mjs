@@ -1605,8 +1605,7 @@ async function patch_kernel(kbase, kmem, p_ucred, restore_info) {
     kmem.write32(sysent_661.add(0x2c), sy_thrcnt);
     localStorage.ExploitLoaded="yes"
     sessionStorage.ExploitLoaded="yes";
-   //alert("kernel exploit succeeded!");
-   	alert("kernel exploit succeeded!");
+   	//alert("kernel exploit succeeded!");
 	msgs.innerHTML="Gold hen loading... please wait";
 }
 
