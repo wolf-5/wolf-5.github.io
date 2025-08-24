@@ -1,21 +1,23 @@
 CACHE MANIFEST 
-# The Wolf Host 900n ( Tue 07/15/2025 )
+# The Wolf Host 900n ( Sun 08/24/2025 )
 
 about.html
+aio_patches.bin
 alert.mjs
 cache.html
 config.mjs
 COPYING
+goldhen.bin
 img.jpg
 index.html
 lapse.mjs
 LICENSE
-payload.bin
-payload.js
 psfree.mjs
+psfree_lapse.cache
 README.md
 send.mjs
-splash.png
+AIO_Fix_Temp\patch_aio.c
+AIO_Fix_Temp\vfs_aio2_pdtor.c
 fonts\FONTS.LICENSE
 fonts\LiberationMono-Regular.ttf
 fonts\README.txt
