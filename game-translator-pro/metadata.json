@@ -1,0 +1,5 @@
+{
+  "name": "Game Translator Pro",
+  "description": "Professional game text translation tool from English to Arabic using Google Gemini AI, following strict formatting and localization rules.",
+  "requestFramePermissions": []
+}
