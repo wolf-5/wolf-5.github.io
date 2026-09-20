@@ -1,0 +1,92 @@
+<html manifest="cache.appcache">
+<head>
+<title>Shadow's Services · PS4 Exploit</title>
+<style>
+body {
+    background:#0b0d10;
+    color:#e6ebf2;
+    font:15px/1.45 "Segoe UI", system-ui, sans-serif;
+    text-align:center;
+    margin:0;
+    overflow:hidden;
+}
+.info {
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-family:Consolas, monospace;
+    font-size:16px;
+    color:#c8ced8;
+    transform:translate(-50%, -50%);
+    letter-spacing:.04em;
+    white-space:nowrap;
+}
+.info b { color:#7fa0c6; font-weight:600; }
+</style>
+<script>
+/*
+ * Cache primer.
+ *
+ * Every asset the exploit chain needs (jb.js, core.js, mem.js, int64.js,
+ * ps4_offsets.js, rpc_worker.js, hen.bin, goldhen.bin, ps4debug.bin,
+ * patches/*.bin) is listed in cache.appcache. If a user lands on
+ * index.html directly, the exploit starts BEFORE those downloads finish
+ * and any fetch(PAYLOAD_FILE) during the run is a live network fetch --
+ * an extra chance for a mid-exploit stall on a flaky Wi-Fi.
+ *
+ * cache.html sits in front of that: it does nothing but download the
+ * manifest with visible progress, then reload the tab. The reload
+ * re-triggers AppCache, but this time every entry is already in the
+ * on-console cache -- index.html loads instant, jb.js does the same,
+ * and every fetch inside the exploit becomes a local read.
+ *
+ * The history-stack collapse below is copied from the mansoor0x/polpNO
+ * variant of this pattern: WebKit's back-forward cache can hold onto
+ * a stale-primed exploit state from a previous run, and wiping the
+ * history entries before the reload makes the second load look like a
+ * fresh navigation.
+ */
+
+// Swap the visible URL to index.html without navigating -- so when the
+// AppCache-completion handler below calls location.reload(), the reload
+// actually hits index.html (the exploit page), not this page.
+history.replaceState(null, null, 'index.html');
+
+// Collapse the tab history so back-button behaviour is clean and WebKit
+// isn't holding references to an earlier navigation state.
+var histlength = history.length;
+try { history.go(-histlength); } catch (e) {}
+
+function DLProgress(e) {
+    var msgs = document.getElementById("msgs");
+    if (!msgs) return;
+    var pct = e.total ? Math.round(e.loaded / e.total * 100) : 0;
+    msgs.innerHTML = "Shadow's Services &middot; Installing ... <b>" + pct + "%</b>";
+}
+
+function DisplayCacheProgress() {
+    var msgs = document.getElementById("msgs");
+    setTimeout(function () {
+        if (msgs) msgs.innerHTML = "Shadow's Services &middot; <b>Cache OK</b>";
+    }, 1500);
+    setTimeout(function () {
+        location.reload();
+    }, 2500);
+}
+
+if (window.applicationCache) {
+    window.applicationCache.addEventListener("progress", DLProgress, false);
+    window.applicationCache.oncached = function () { DisplayCacheProgress(); };
+    window.applicationCache.onupdateready = function () { DisplayCacheProgress(); };
+    // If the cache is already there (repeat visit) neither event fires -- just
+    // hand off to the exploit page.
+    window.applicationCache.addEventListener("noupdate", function () {
+        setTimeout(function () { location.reload(); }, 200);
+    }, false);
+}
+</script>
+</head>
+<body>
+<div id="msgs" class="info">Shadow's Services &middot; Priming cache ...</div>
+</body>
+</html>
